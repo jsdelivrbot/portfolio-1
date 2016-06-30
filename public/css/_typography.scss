@@ -4,8 +4,14 @@ body {
   color: $purp;
 }
 
-p {font-size: 1.2em;
-line-height: 2.8rem}
+p {
+  font-size: 1.2em;
+  line-height: 2.8rem;
+  figcaption & {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}
 .indent {text-indent: 1.8em;}
 
 h1{font-size:2.2em;font-weight: 500;}
