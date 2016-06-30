@@ -1,0 +1,63 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6em;
+  color: $purp;
+}
+
+p {font-size: 1.2em;
+line-height: 2.8rem}
+.indent {text-indent: 1.8em;}
+
+h1{font-size:2.2em;font-weight: 500;}
+h2{font-size:1.6em;font-weight: 300;}
+h3{font-size:1.3em;font-weight: 500;}
+h4{font-size:1em;font-weight: 300;}
+h5{font-size: .7em;font-weight:300;}
+hr{width:20%; &.line {width: 100%}}
+
+h1,h2,h3,h4{
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: .1rem;
+};
+
+a {
+  font-family: 'Fira Sans', sans-serif;
+  color: $glow;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  transition: .23s ease;
+  &:hover {
+    color: $glow;
+    text-decoration: none;
+  }
+  .btn {
+    transition: .23s ease;
+    font-size: 1.3em;
+    font-weight: 500;
+    border: 1px solid $glow;
+    &:hover {
+      background-color: $purp;
+      border-color: $purp;
+      color: white;
+      &.cta{
+        border-color: white;
+      }
+    }
+  }
+}
+
+.small {
+  font-size: .8em;
+}
+
+.big {
+  font-size: 2em;
+}
+
+.thin {
+  font-weight: 300;
+}
+.thick{font-weight:500;}
+.uppercase{text-transform: uppercase;}
+.nocase{text-transform: none;}

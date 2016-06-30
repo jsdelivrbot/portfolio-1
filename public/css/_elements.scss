@@ -1,0 +1,130 @@
+.artist {
+  background-position: 95% 50%;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  .artist {
+    background-position: 50% 0%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
+}
+
+.card {
+  border: 1px solid;
+  border-image: linear-gradient(to bottom, $tangelo, $glow, $red, $purp) 80 20%;
+}
+
+img {
+  &.sm{max-width: 200px;}
+  &.md{max-width: 500px;}
+  &.lg{max-width:1000px;}
+}
+
+input.btn{
+  background-color: white;
+  border-radius: 0px;
+  border-style: none;
+  border: 1px solid $purp;
+  color: $purp;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: 'Fira Sans', sans-serif;
+  &:hover{
+    background-color:$purp;
+    color: white;
+    @extend .t;
+  }
+  &.dark {
+    color: $glow;
+    border-color: $glow;
+    background-color: $dark;
+    @extend .t;
+    &:hover{
+      color: white;
+      border-color: white;
+    }
+  }
+}
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left:20px solid $purp;
+  margin: 20px 0 0 -60px;
+}
+.borderx{
+  border-left: 1px solid $light;
+  border-right: 1px solid $light;
+}
+
+.bt{
+  border-top: 1px solid $light;
+}
+
+.bb{
+  border-bottom: 1px solid $light;
+}
+
+.center-fix{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logo {
+  &.lg {
+    max-height: 600px;
+    min-height:400px;
+  }
+  &.sm {
+    max-width: 50px;
+  }
+}
+.dot{
+  border:8px solid white;
+  border-radius: 50%;
+  background-color: $glow;
+  margin-top: -18px;
+  box-shadow: 0 0 0 1px $light;
+  position: absolute;
+  &.right{
+    right: -50px;
+  }
+  &.left{
+    left: -65px;
+  }
+}
+.line{
+  width: 90%;
+  height: 1px;
+  border-top: 1px solid $light;
+  &.left{
+    margin-top: none;
+    position: absolute;
+    right: 0;
+  }
+}
+.vline{
+  height: 50px;
+  border-left: 1px solid $dark-red;
+  position: absolute;
+  left: 50%;
+  transform: translateY(-60px);
+}
+.wedge{
+  height: 30px;
+  width: 30px;
+  transform:translateY(5px)rotate(45deg);
+}
+
+.border-right{
+  border-right: 1px solid $light;
+}
+.border-top {
+  border-top: 1px solid $dark-red;
+}
+
+.t{transition: .23s ease;}

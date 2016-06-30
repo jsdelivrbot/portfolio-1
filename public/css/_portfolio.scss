@@ -1,0 +1,27 @@
+.brick {
+  height: 250px;
+
+    background-image:url('../img/articles_bg.svg');
+    background-position: center;
+    transition: .23s ease-in-out;
+    background-size:120%;
+    &:hover{
+      figcaption{
+        bottom:-5px;
+        left:-2px;
+      }
+    }
+
+  figcaption {
+    transition: .23s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    max-width: 80%;
+
+  }
+}
+
+.img-inline {
+  width: 100%;
+}

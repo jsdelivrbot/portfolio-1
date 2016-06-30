@@ -1,0 +1,21 @@
+<form class="" action="/contact" method="post">
+  <div class="row">
+    <div class="col-sm-6">
+      <label for="name">Your (real) name *</label>
+      <input type="text" name="name" required class="form-field" placeholder="Your Name" aria-describedby="Your name">
+    </div>
+    <div class="col-sm-6">
+      <label for="email">Your email</label>
+      <input type="email" name="email" required class="form-field" placeholder="Email" aria-describedby="Your email" >
+    </div>
+  </div>
+  <label for="description">Introduce yourself & your project!</label>
+  <textarea type="textarea" required name="description" class="form-field" placeholder="Tell us about your project" area-describedby="About you and your project"></textarea>
+  <div class="tc">
+    <label for="soundcloud">Your Soundcloud URL</label>
+    <input type="url" name="soundcloud" class="form-field wide tc" placeholder="https://soundcloud.com/example" aria-describedby="Your Soundcloud URL">
+  </div>
+  <div class="tc">
+    <input type="submit" class="mt3 btn py2 px5" value="Send">
+  </div>
+</form>

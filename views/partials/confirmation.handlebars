@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2 class="tc">{{heads.success}}</h2>
+      <p>{{{subheads.success.[0]}}}</p>
+      <h3>{{subheads.success.[1]}}</h3>
+      {{#each faq}}
+      <h4>{{this.[0]}}</h4>
+      <p>{{{this.[1]}}}</p>
+      {{/each}}
+    </div>
+  </div>
+</div>

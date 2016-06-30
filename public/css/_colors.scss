@@ -1,0 +1,47 @@
+$purp: #252938;
+$glow: #5ca5fb;
+$tangelo: #91e1fa;
+$red: #b32c39;
+$dark-red: rgb(78, 26, 26);
+$dark: #222;
+$dark-t: rgba(#222222, 0.45);
+$grey: #ccc;
+$light: #eee;
+$gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
+
+.bg-dark {background-color: $dark}
+.bg-dark-t {background-color: $dark-t}
+.bg-purp {background-color: $purp}
+.bg-glow{background-color: $glow}
+.bg-white{background-color: white}
+.bg-light{background-color:$light}
+.bg-banner-bot {background-image: url('../img/banner.png'); background-position: bottom; background-size: cover;}
+
+
+.glow{color:$glow}
+.grey{color: $grey}
+.white{color:white}
+.red{color:$red}
+
+.bg-upknown{
+  background-image:url('../img/articles_bg.svg');
+  background-size: 130%;
+  background-position: center;
+  background-color: $purp;
+}
+
+.bg-bloom {
+  background-image: url('../img/backgrounds/bg-bloom.svg');
+}
+.bg-zp {
+  background-image: url('../img/backgrounds/bg-zp.svg');
+}
+.bg-eyeris {
+  background-image: url('../img/backgrounds/bg-eyeris.svg');
+}
+.bg-sdk {
+  background-image: url('../img/backgrounds/bg-sdk.svg');
+}
+.bg-quote {
+  background-image: url('../img/backgrounds/quote.svg');
+}

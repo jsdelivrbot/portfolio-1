@@ -1,0 +1,12 @@
+<nav class="py4 px3 clearfix">
+  <a href="/"><img src="img/t.svg" alt="Trevor Waldorf" class="logo sm ml4"/>
+  <div class="tc di">
+    <h1 class="di ml4 nocase">{{heads.main.[0]}}</h1>
+  </div>
+  </a>
+  <ul class="tc fr">
+    {{#each nav}}
+    <li class="dib"><a href="{{this.[1]}}" class="thin">{{this.[0]}}</a></li>
+    {{/each}}
+  </ul>
+</nav>
