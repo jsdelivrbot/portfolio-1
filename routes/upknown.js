@@ -3,10 +3,10 @@ var router = express.Router();
 var context = require('../public/js/upknowncontext');
 
 
-/* GET proc page. */
+/* GET page. */
 
 router.get('/upknown', function(req, res) {
-  res.render('upknown', upknowncontext);
+  res.render('upknown', context);
 });
 
 module.exports = router;

@@ -7,10 +7,6 @@ var context = {
     home: [
       'Projects',
       '/'
-    ],
-    about: [
-      'About',
-      '/about'
     ]
   },
   paragraphs: {
@@ -38,7 +34,15 @@ var context = {
     endthree:'Working closely with Danny and Luke also made me question what values I bring to the table when designing products. Sometimes what is best for the users\' experience isn’t always best for the product overall due to the needs of other stakeholders. Just because Danny is a badass and we could ship features every day doesn’t mean we should, but at the same time, our nimble design and development cycle could have been utilized to take bigger risks.',
     endfour:'A handful of users still use Upknown to track candidates and match them with jobs in their network (tracking jobs manually). But on the development side, the project is private on Github, closed to new user accounts.'
   },
-
+  paragraphs_mocktail: {
+    context: 'In late 2014 I met Hunter Streit, a musician and graphic artist now based in Portland. We both had strings in the electronic music scene, especially in a style called Neuro, which is the lovechild of glitch hop and neurofunk (derived from Drum & Bass in the early 2000s). I had just finished working with Techstars Boulder as a designer and was looking for something more off the beaten path than startups. We had a few meetings over coffee and realized we had to start a project using our shared love of music, technology, and art.',
+    problem:'The music market is grossly saturated. Thanks to the accessibility of making music in the computer era, and the popular revival of dance music in the late 2000s, the amount of music produced by amateur music producers has exploded in the last twenty years. Some of these artists are very talented and produce high-quality, innovative and diverse music but lack the skills and bandwidth needed to present their music to the world.',
+    hypothesis:'Using graphic art and design combined with an attitude of professionalism and respect for deadlines, we could start an agency that helped musicians push their careers forward towards making a living from their music. After a base of clients is established, more expertise would be deployed to meet the needs of musicians trying to build an audience. The agency would build a number of properties in the online music space using the high quality of work and partners from client projects and eventually transform into a product company.',
+    wrong:'For many reasons, personal, professional, and some related to the market, my cofounder and I decided to split less than a year after forming. Mocktail worked with almost 40 musicians and a handful of additional designers during its peak in 2015, and it gave me a portfolio of dozens of artist logos and pressure to constantly refine my logo design process.',
+    wrongtwo:'As it turns out, as much as talent agents and artist managers like to pump up the importance of good design when “picking” artists, design is a commodity and a small part of the music career equation. We weren’t able to have the impact that we had hoped, and some of our unique selling points, like high-quality communication, billing, and project management is not as important in the music industry as in technology because the music industry is mostly held together by strong interpersonal relationships and shared histories. We positioned the firm in the wrong part of the market and tried to attract talent cold instead of working through our already existing friendships in the industry.',
+    wrongthree:'Managing a creative team is challenging, in this case because there were different types of creatives on the team with similar skill sets but different methodologies. Being flexible and checking your ego at the door every day is hard when a large part of the work is up to individual taste. I try to keep the artistic taste, but imagine it’s someone else’s and I’m just representing it for the purpose of the project. This helps me take feedback and disagreements and reframe it constructively.',
+    wrongfour:'The biggest learning was that a financial model has to work before I start a business (duh). We had optimistic projections that wouldn’t have worked even if everything went right. Don’t do things that you know won’t work, Trevor!'
+  },
   heads: {
     main: [
       'Trevor Waldorf'

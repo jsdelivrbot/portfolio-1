@@ -9,9 +9,14 @@ var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 
 var routes = require('./routes/index');
-var proc = require('./routes/upknown');
-var contact = require('./routes/contact');
-var contact = require('./routes/success');
+var upknown = require('./routes/upknown');
+var mocktail = require('./routes/mocktail');
+var ascendeur = require('./routes/ascendeur');
+var techstars = require('./routes/techstars');
+var hexeater = require('./routes/hexeater');
+var poster = require('./routes/poster');
+var refracted = require('./routes/refracted');
+var about = require('./routes/about');
 
 var app = express();
 
@@ -38,9 +43,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/process', proc);
-app.use('/contact', contact);
-app.use('/success', contact);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

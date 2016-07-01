@@ -29,6 +29,17 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
   background-position: center;
   background-color: $purp;
 }
+.bg-ascendeur{
+  background-image:url('../img/ascendeur_bg.gif');
+  background-size: cover;
+  background-position: center;
+}
+.bg-mocktail{
+  background-image:url('../img/mocktail_illustration.svg');
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
 
 .bg-bloom {
   background-image: url('../img/backgrounds/bg-bloom.svg');
