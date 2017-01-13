@@ -24,6 +24,14 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
   background-color: $purp;
 }
 
-.blackandwhitebaby{
-
+.bg-image {
+  // position: relative;
+  // right:0;
+  // margin:auto;
+  // top: 40%;
+  // width:400px;
+  background-image:url('../img/lime.svg');
+  background-size: 150%;
+  background-position: 150px 50%;
+  background-repeat: no-repeat;
 }

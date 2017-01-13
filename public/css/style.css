@@ -43,6 +43,12 @@
   background-position: center;
   background-color: #252938; }
 
+.bg-image {
+  background-image: url("../img/lime.svg");
+  background-size: 150%;
+  background-position: 150px 50%;
+  background-repeat: no-repeat; }
+
 .ma {
   margin: auto; }
 
