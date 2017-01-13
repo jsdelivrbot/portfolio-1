@@ -1,72 +1,78 @@
+:root {
+font-size: 16px;
+}
+
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.6em;
-  color: $purp;
+  font-family: 'Georgia', serif;
+  font-size: 1.0625rem;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  background-color: #000000;
+  background: linear-gradient(to right, black 49.99%, white 50%);
 }
 
 p {
-  font-size: 1.2em;
-  line-height: 2.8rem;
-  margin: 0 0 2rem 0;
+  line-height: 26px;
+  margin: 0 0 17px 0;
   figcaption & {
     font-size: 1.4rem;
     line-height: 1.6rem;
   }
+  &.small{
+    margin: 8px 0 0 0;
+    font-size:1.0625rem;
+    line-height: 1.45rem;
+    font-weight: 300;
+  }
 }
-.indent {text-indent: 1.8em;}
 
-h1{font-size:2.2em;font-weight: 500;}
-h2{font-size:1.6em;font-weight: 300;}
-h3{font-size:1.3em;font-weight: 500;}
-h4{font-size:1em;font-weight: 300;}
-h5{font-size: .7em;font-weight:300;}
-hr{width:20%; &.line {width: 100%}}
+a{
+  @extend .white;
+  text-decoration: none;
+  border: none;
+  transition: all ease .04s;
+  font-weight: 600;
+  &:hover{
+    padding: 0 0 0 3px;
+  }
+}
 
-h1,h2,h3,h4{
-  font-family: 'Fira Sans', sans-serif;
-  letter-spacing: .1rem;
-  margin-bottom: 2rem;
-  margin-top: 4rem;
+h1,h2,h3,h4,h5,a{
+  font-family: 'Avenir Next', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: .04rem;
 };
 
-a {
-  font-family: 'Fira Sans', sans-serif;
-  color: $glow;
-  font-weight: 500;
+h1{font-size: 2.625rem;font-weight: 600;
+  line-height:3rem;}
+h2{font-size:2.125rem;font-weight: 700;
+  line-height:3rem;}
+h3{font-size:1.4375rem;font-weight: 500;
+  line-height:1.5625rem;
+  margin: 5px 0 0 0;}
+h4{font-size:11px;font-weight: 500;
+  line-height:0.8125rem;
   text-transform: uppercase;
-  letter-spacing: .1rem;
-  transition: .23s ease;
-  &:hover {
-    color: $glow;
-    text-decoration: none;
+  margin: 20px 0 0 0;}
+h5{font-size:0.6875rem;font-weight:400;
+  margin: 11px 0 0 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid $light;}
+h6{font-size:1.0625rem;font-weight:300;
+  font-family: 'Georgia', serif;
+}
+
+hr{width:20%;
+  &.line {
+    width: 100%;
+    border: none; border-top: 1px solid black
   }
-  .btn {
-    transition: .23s ease;
-    font-size: 1.3em;
-    font-weight: 500;
-    border: 1px solid $glow;
-    &:hover {
-      background-color: $purp;
-      border-color: $purp;
-      color: white;
-      &.cta{
-        border-color: white;
-      }
-    }
-  }
+  border: none; border-top: 1px solid $light
 }
 
-.small {
-  font-size: .8em;
+nav li{
+  margin: 0 0 13px 0;
 }
 
-.big {
-  font-size: 2em;
-}
-
-.thin {
-  font-weight: 300;
-}
-.thick{font-weight:500;}
+.indent {text-indent: 1.8em;}
 .uppercase{text-transform: uppercase;}
 .nocase{text-transform: none;}

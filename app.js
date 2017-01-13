@@ -1,5 +1,3 @@
-
-
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -9,14 +7,6 @@ var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 
 var routes = require('./routes/index');
-var upknown = require('./routes/upknown');
-var mocktail = require('./routes/mocktail');
-var ascendeur = require('./routes/ascendeur');
-var techstars = require('./routes/techstars');
-var hexeater = require('./routes/hexeater');
-var poster = require('./routes/poster');
-var refracted = require('./routes/refracted');
-var about = require('./routes/about');
 
 var app = express();
 

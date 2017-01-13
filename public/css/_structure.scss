@@ -1,0 +1,34 @@
+.container {
+  padding: 52px 7.5% 52px 7.5%;
+  width:50%;
+}
+
+.container-content{
+  display: flex;
+  height:100%;
+  max-width:1080px;
+  margin: auto;
+}
+
+.container-left{
+  @extend .box;
+  @extend .container;
+}
+
+.container-right{
+  @extend .box;
+  @extend .container;
+  // position: fixed;
+  // right: 0;
+  // top: 0;
+}
+
+@media screen and (max-width:680px), handheld and (orientation: landscape) {
+  .container{
+    padding: 52px 15% 52px 15%;
+    width:100%;
+  }
+  .container-content{
+    display: block;
+  }
+}
