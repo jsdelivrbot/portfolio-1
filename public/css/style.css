@@ -48,6 +48,41 @@
   background-size: 150%;
   background-position: 150px 50%;
   background-repeat: no-repeat; }
+  .bg-image.clients {
+    background-image: url("../img/logobatchorange.svg");
+    background-size: 100%;
+    background-position: 50px 50%; }
+
+.img-hero img {
+  max-width: 101%;
+  max-height: 101%;
+  position: fixed; }
+
+.fadein {
+  animation: fadein .5s; }
+
+.slideup {
+  animation: slideup 0.5s cubic-bezier(0, 0.71, 0, 0.99); }
+  .slideup.clients {
+    animation: slideup2 0.5s cubic-bezier(0, 0.71, 0, 0.99); }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes slideup {
+  from {
+    background-position: 150px 300%; }
+  to {
+    background-position: 150px 50%; } }
+
+@keyframes slideup2 {
+  from {
+    background-position: 150px 300%; }
+  to {
+    background-position: 50px 50%; } }
 
 .ma {
   margin: auto; }
@@ -351,7 +386,8 @@ body {
   -webkit-font-smoothing: antialiased;
   color: black;
   background-color: #000000;
-  background: linear-gradient(to right, black 49.99%, white 50%); }
+  background: linear-gradient(to right, black 49.99%, white 50%);
+  overflow-y: scroll; }
 
 p {
   line-height: 26px;
@@ -370,7 +406,7 @@ a {
   border: none;
   transition: all ease .04s;
   font-weight: 600; }
-  a:hover {
+  a:hover:not(.clean) {
     padding: 0 0 0 3px; }
 
 h1, h2, h3, h4, h5, a {
@@ -390,7 +426,7 @@ h2 {
 h3 {
   font-size: 1.4375rem;
   font-weight: 500;
-  line-height: 1.5625rem;
+  line-height: 1.7rem;
   margin: 5px 0 0 0; }
 
 h4 {
@@ -398,7 +434,10 @@ h4 {
   font-weight: 500;
   line-height: 0.8125rem;
   text-transform: uppercase;
-  margin: 20px 0 0 0; }
+  margin: 4px 0 0 0;
+  letter-spacing: .07rem; }
+  h4.list {
+    margin: 20px 0 0 0; }
 
 h5 {
   font-size: 0.6875rem;
@@ -425,7 +464,7 @@ nav li {
   margin: 0 0 13px 0; }
 
 .indent {
-  text-indent: 1.8em; }
+  text-indent: 0.5em; }
 
 .uppercase {
   text-transform: uppercase; }

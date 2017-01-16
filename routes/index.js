@@ -12,12 +12,21 @@ router.get('/projects', function(req, res) {
   res.render('projects', context);
 });
 
-router.get('/', function(req, res) {
-  res.render('', context);
+router.get('/clients', function(req, res) {
+  res.render('clients', context);
 });
 
-router.get('/about', function(req, res) {
-  res.render('about', context);
+router.get('/writing', function(req, res) {
+  res.render('writing', context);
 });
+
+router.get('/resources', function(req, res) {
+  res.render('resources', context);
+});
+
+router.get('/bio', function(req, res) {
+  res.render('bio', context);
+});
+
 
 module.exports = router;

@@ -25,13 +25,43 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
 }
 
 .bg-image {
-  // position: relative;
-  // right:0;
-  // margin:auto;
-  // top: 40%;
-  // width:400px;
   background-image:url('../img/lime.svg');
   background-size: 150%;
   background-position: 150px 50%;
   background-repeat: no-repeat;
+  &.clients{
+    background-image:url('../img/logobatchorange.svg');
+    background-size: 100%;
+    background-position: 50px 50%;
+  }
+}
+
+// MOVE ME TO IMG SCSS FILE
+.img-hero {
+  img{
+    max-width:101%;
+    max-height:101%;
+    position: fixed;
+  }
+}
+
+.fadein {animation: fadein .5s;}
+.slideup {
+  animation: slideup .5s cubic-bezier(0,.71,0,.99);
+  &.clients{
+    animation: slideup2 .5s cubic-bezier(0,.71,0,.99);
+  }
+}
+
+@keyframes fadein {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+@keyframes slideup {
+  from {background-position:150px 300%;}
+  to {background-position: 150px 50%;}
+}
+@keyframes slideup2{
+  from {background-position:150px 300%;}
+  to {background-position: 50px 50%;}
 }

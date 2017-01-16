@@ -9,6 +9,8 @@ body {
   color: black;
   background-color: #000000;
   background: linear-gradient(to right, black 49.99%, white 50%);
+
+  overflow-y: scroll;
 }
 
 p {
@@ -33,7 +35,9 @@ a{
   transition: all ease .04s;
   font-weight: 600;
   &:hover{
-    padding: 0 0 0 3px;
+    &:not(.clean){
+      padding: 0 0 0 3px;
+    }
   }
 }
 
@@ -47,12 +51,15 @@ h1{font-size: 2.625rem;font-weight: 600;
 h2{font-size:2.125rem;font-weight: 700;
   line-height:3rem;}
 h3{font-size:1.4375rem;font-weight: 500;
-  line-height:1.5625rem;
+  line-height:1.7rem;
   margin: 5px 0 0 0;}
 h4{font-size:11px;font-weight: 500;
   line-height:0.8125rem;
   text-transform: uppercase;
+  margin: 4px 0 0 0;
+  &.list{
   margin: 20px 0 0 0;}
+  letter-spacing: .07rem;}
 h5{font-size:0.6875rem;font-weight:400;
   margin: 11px 0 0 0;
   padding: 0 0 20px 0;
@@ -73,6 +80,6 @@ nav li{
   margin: 0 0 13px 0;
 }
 
-.indent {text-indent: 1.8em;}
+.indent {text-indent: 0.5em;}
 .uppercase{text-transform: uppercase;}
 .nocase{text-transform: none;}
