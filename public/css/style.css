@@ -19,23 +19,28 @@
   .container-content {
     display: block; } }
 
-.bg-black {
-  background-color: black; }
-
-.bg-white {
-  background-color: white; }
-
 .glow {
   color: #5ca5fb; }
 
 .grey {
   color: #ccc; }
 
-.white, a {
+.white, .bg-black {
   color: white; }
+
+.black, a {
+  color: black; }
 
 .red {
   color: #b32c39; }
+
+.bg-black {
+  background-color: black; }
+  .bg-black a {
+    color: white; }
+
+.bg-white {
+  background-color: white; }
 
 .bg-image-example {
   background-image: url("../img/articles_bg.svg");
@@ -52,6 +57,10 @@
     background-image: url("../img/logobatchorange.svg");
     background-size: 100%;
     background-position: 50px 50%; }
+  .bg-image.wine {
+    background-image: url("../img/winebottle.svg");
+    background-size: 50%;
+    background-position: 150% top; }
 
 .img-hero img {
   max-width: 101%;
@@ -65,6 +74,8 @@
   animation: slideup 0.5s cubic-bezier(0, 0.71, 0, 0.99); }
   .slideup.clients {
     animation: slideup2 0.5s cubic-bezier(0, 0.71, 0, 0.99); }
+  .slideup.wine {
+    animation: slideup3 0.5s cubic-bezier(0, 0.71, 0, 0.99); }
 
 @keyframes fadein {
   from {
@@ -83,6 +94,12 @@
     background-position: 150px 300%; }
   to {
     background-position: 50px 50%; } }
+
+@keyframes slideup3 {
+  from {
+    background-position: 200% top; }
+  to {
+    background-position: 150% top; } }
 
 .ma {
   margin: auto; }
@@ -381,7 +398,7 @@ ul {
   font-size: 16px; }
 
 body {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: 1.0625rem;
   -webkit-font-smoothing: antialiased;
   color: black;
@@ -389,9 +406,20 @@ body {
   background: linear-gradient(to right, black 49.99%, white 50%);
   overflow-y: scroll; }
 
+a {
+  transition: all ease .04s;
+  text-decoration: none;
+  border: none;
+  font-weight: 600; }
+
+.bg-black a:hover:not(.clean) {
+  padding: 0 0 0 3px; }
+
 p {
+  font-family: "Georgia", serif;
   line-height: 26px;
-  margin: 0 0 17px 0; }
+  margin: 8px 0 17px 0;
+  letter-spacing: normal; }
   figcaption p {
     font-size: 1.4rem;
     line-height: 1.6rem; }
@@ -401,15 +429,7 @@ p {
     line-height: 1.45rem;
     font-weight: 300; }
 
-a {
-  text-decoration: none;
-  border: none;
-  transition: all ease .04s;
-  font-weight: 600; }
-  a:hover:not(.clean) {
-    padding: 0 0 0 3px; }
-
-h1, h2, h3, h4, h5, a {
+h1, h2, h3, h4, h5, h6, a {
   font-family: 'Avenir Next', 'Helvetica', 'Arial', sans-serif;
   letter-spacing: .04rem; }
 
@@ -449,7 +469,9 @@ h5 {
 h6 {
   font-size: 1.0625rem;
   font-weight: 300;
-  font-family: 'Georgia', serif; }
+  line-height: 1.7rem;
+  margin: 8px 0 0 0;
+  letter-spacing: normal; }
 
 hr {
   width: 20%;

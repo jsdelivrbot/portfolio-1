@@ -9,13 +9,15 @@ $grey: #ccc;
 $light: #eee;
 $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
 
-.bg-black {background-color: black}
-.bg-white {background-color: white}
-
 .glow{color:$glow}
 .grey{color: $grey}
 .white{color:white}
+.black{color:black}
 .red{color:$red}
+
+.bg-black {background-color: black; @extend .white; a{color: white;}}
+.bg-white {background-color: white}
+
 
 .bg-image-example{
   background-image:url('../img/articles_bg.svg');
@@ -34,6 +36,11 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
     background-size: 100%;
     background-position: 50px 50%;
   }
+  &.wine{
+    background-image:url('../img/winebottle.svg');
+    background-size: 50%;
+    background-position: 150% top;
+  }
 }
 
 // MOVE ME TO IMG SCSS FILE
@@ -51,6 +58,9 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
   &.clients{
     animation: slideup2 .5s cubic-bezier(0,.71,0,.99);
   }
+  &.wine{
+    animation: slideup3 .5s cubic-bezier(0,.71,0,.99);
+  }
 }
 
 @keyframes fadein {
@@ -64,4 +74,8 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
 @keyframes slideup2{
   from {background-position:150px 300%;}
   to {background-position: 50px 50%;}
+}
+@keyframes slideup3{
+  from {background-position:200% top;}
+  to {background-position: 150% top;}
 }

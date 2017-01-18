@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="132px" height="422px" viewBox="0 0 132 422" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" stroke="#FFFFFF">
+            <g id="Group-Copy" transform="translate(2.000000, 2.000000)">
+                <g id="Group">
+                    <ellipse id="Oval-5" cx="65" cy="4.5" rx="24" ry="4.5"></ellipse>
+                    <ellipse id="Oval-5" cx="65" cy="3.5" rx="19" ry="2.5"></ellipse>
+                    <ellipse id="Oval-5-Copy" cx="65" cy="74" rx="24" ry="1"></ellipse>
+                    <ellipse id="Oval-5-Copy-2" cx="65" cy="59.5" rx="24" ry="0.5"></ellipse>
+                    <path d="M40.5,5.47531494 L40.5,86.5083328" id="Line" stroke-linecap="square" transform="translate(40.500000, 46.000000) scale(-1, 1) translate(-40.500000, -46.000000) "></path>
+                    <path d="M3,86 C3,103.628906 6.34375,118.054688 18,122.972656 C29.65625,127.890625 40.5742188,129.316406 40.5742188,163.835938" id="Path-7" transform="translate(21.787109, 124.917969) scale(-1, 1) translate(-21.787109, -124.917969) "></path>
+                    <path d="M1.5,163.5 L1.5,386.520178" id="Line" stroke-linecap="square" transform="translate(1.500000, 275.000000) scale(-1, 1) translate(-1.500000, -275.000000) "></path>
+                    <path d="M3.5,169.5 L3.5,392.520178" id="Line" stroke-linecap="square" transform="translate(3.500000, 281.000000) scale(-1, 1) translate(-3.500000, -281.000000) "></path>
+                    <ellipse id="Oval-6" cx="64" cy="386.5" rx="62" ry="28.5"></ellipse>
+                    <ellipse id="Oval-6-Copy-2" cx="64" cy="307" rx="62" ry="17"></ellipse>
+                    <ellipse id="Oval-6-Copy-3" cx="64" cy="197.105469" rx="62" ry="7.88305664"></ellipse>
+                    <ellipse id="Oval-6-Copy" cx="64.5" cy="391.5" rx="55.5" ry="25.5"></ellipse>
+                    <ellipse id="Oval-6-Copy" cx="65" cy="388.5" rx="53" ry="24.5"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

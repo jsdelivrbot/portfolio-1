@@ -28,5 +28,9 @@ router.get('/bio', function(req, res) {
   res.render('bio', context);
 });
 
+router.get('/work/wineux', function(req, res) {
+  res.render('work/wineux', context);
+});
+
 
 module.exports = router;
