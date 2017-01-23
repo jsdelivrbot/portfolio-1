@@ -1,6 +1,10 @@
 .container {
   padding: 52px 7.5% 52px 7.5%;
-  width:50%;
+  max-width:50%;
+  &.full {max-width: 50%; @extend .ma; @extend .box;}
+  &.mostly {max-width:80%; @extend .ma; @extend .box;
+    padding-top: 0; padding-bottom: 0;
+  }
 }
 
 .container-content{
@@ -20,12 +24,45 @@
   @extend .container;
 }
 
-@media screen and (max-width:680px), handheld and (orientation: landscape) {
+.row {
+  display: flex;
+  justify-content:space-between;
+  &.jl{
+    justify-content:flex-start;
+    padding: .5rem 1.5rem; margin: 0 15px;
+  }
+}
+
+.cl{
+  margin: 0 15px;
+  padding: .5rem .2rem;
+  p {margin-bottom: 0}
+}
+
+.cl-2{
+  margin: 0;
+  width: 45%;
+}
+
+@media screen and (max-width:680px), handheld and (orientation: portrait) {
   .container{
     padding: 52px 15% 52px 15%;
-    width:100%;
+    max-width:100%;
+    &.mostly{max-width:100%; padding-top: 0;}
+    &.full{max-width:100%;}
   }
   .container-content{
     display: block;
   }
+  .row{display: block;}
+  .cl{max-width: 90%; padding: 0; margin: 1rem 0;}
+}
+
+@media screen and (max-width:1280px) and (min-width:681px), handheld and (orientation: portrait) {
+  .container{
+    max-width: 75%;
+    &.full{max-width: 75%;}
+  }
+  .row{display: block;}
+  .cl{max-width: 90%; padding: 0; margin: 2rem 0;}
 }

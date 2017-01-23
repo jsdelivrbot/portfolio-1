@@ -23,6 +23,18 @@ a{
   font-weight: 600;
 }
 
+nav{
+  &.nav-secondary{
+    a{
+      font-weight: 400;
+    }
+  }
+}
+
+.nav-item{
+  margin: 0 0 13px 0;
+}
+
 .bg-black a{
   &:hover{
     &:not(.clean){
@@ -48,6 +60,14 @@ p {
   }
 }
 
+li {
+  margin: 15px;
+  list-style:disc;
+  &:first-of-type {
+    margin-top: 8px;
+  }
+}
+
 h1,h2,h3,h4,h5,h6,a{
   font-family: 'Avenir Next', 'Helvetica', 'Arial', sans-serif;
   letter-spacing: .04rem;
@@ -59,7 +79,7 @@ h2{font-size:2.125rem;font-weight: 700;
   line-height:3rem;}
 h3{font-size:1.4375rem;font-weight: 500;
   line-height:1.7rem;
-  margin: 5px 0 0 0;}
+  margin: 13px 0 0 0;}
 h4{font-size:11px;font-weight: 500;
   line-height:0.8125rem;
   text-transform: uppercase;
@@ -71,7 +91,7 @@ h5{font-size:0.6875rem;font-weight:400;
   margin: 11px 0 0 0;
   padding: 0 0 20px 0;
   border-bottom: 1px solid $light;}
-h6{font-size:1.0625rem;font-weight: 300;
+h6{font-size:1.0625rem;font-weight: 500;
   line-height:1.7rem;
   margin: 8px 0 0 0;
   letter-spacing: normal;
@@ -83,10 +103,6 @@ hr{width:20%;
     border: none; border-top: 1px solid black
   }
   border: none; border-top: 1px solid $light
-}
-
-nav li{
-  margin: 0 0 13px 0;
 }
 
 .indent {text-indent: 0.5em;}

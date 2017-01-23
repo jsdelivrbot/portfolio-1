@@ -52,6 +52,10 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
   }
 }
 
+iframe {max-width: 100%;}
+
+//animations file
+
 .fadein {animation: fadein .5s;}
 .slideup {
   animation: slideup .5s cubic-bezier(0,.71,0,.99);
