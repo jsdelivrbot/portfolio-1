@@ -19,3 +19,9 @@ img {
 figcaption {
   @extend .mb3;
 }
+
+aside {
+  border: 1px solid black;
+  @extend .px3;
+  @extend .py2;
+}

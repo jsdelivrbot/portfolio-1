@@ -286,7 +286,7 @@
   padding-left: 1rem;
   padding-right: 1rem; }
 
-.py2 {
+.py2, aside {
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
@@ -305,7 +305,7 @@
 .pl3 {
   padding-left: 2rem; }
 
-.px3 {
+.px3, aside {
   padding-left: 2rem;
   padding-right: 2rem; }
 
@@ -526,6 +526,9 @@ iframe {
 
 img.full {
   max-width: 100%; }
+
+aside {
+  border: 1px solid black; }
 
 .fadein {
   animation: fadein .5s; }

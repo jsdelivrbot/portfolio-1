@@ -2,7 +2,6 @@
   <div class="container-left white bg-black bg-image slideup wine">
     {{> header}}
     {{> nav}}
-    {{> winevr-nav}}
   </div>
   <!-- INDEX  -->
   <div class="container-right bg-white list fadein">
@@ -10,29 +9,36 @@
     <hr class="line">
     <h4>Prototype & process walkthrough</h4>
     <h2>VR Vineyard Experiences 🍇</h2>
-    <p>The initial user experience work for this project is covered in
-      <a href="/work/wineux">The UX of Wine</a>, including my process for understanding, defining, and hypothesizing as well as associated deliverables.</p>
-    <h3 class="mt3" id="overview">TL;DR</h3>
-    <p>I used Unity to build a functioning VR prototype vineyard tour in three weeks.</p><p> Testing VR experiences is hard but crucial to the success of the experience, like all other mediums.</p>
-    <h6>At-A-Glance</h6>
-    <ul>
-      <li>Engine: Unity3D 5.x</li>
-      <li>Assets in: Blender, Photoshop, Bitwig</li>
-      <li>Dev time: ~3 Weeks</li>
-      <li>Tests + Demos: 5</li>
-    </ul>
-    <p><a href="https://drive.google.com/open?id=0B11Ag9_N3O2wZUtsQm5DTGdwRVU">View a video of the demo on Google Drive</a>, or shoot me an email and ask for a demo in person!</p>
-    <p>Read on below for the full process.</p>
+    <aside class="small mt3">
+      <h4 class="mt1">Hold up, partner</h4>
+      <p>The user experience work for this project is covered in <a href="/work/wineux" target="_blank">The UX of Wine</a>, including my process for understanding, defining, and hypothesizing as well as associated deliverables.</p>
+      <p>I assume you have a surface-level understanding of VR technology and current applications in this case study. If not, don't run away! Watch a <a href="https://drive.google.com/open?id=0B11Ag9_N3O2wZUtsQm5DTGdwRVU" target="_blank">video</a> from user testing and skim the rest.</p>
+    </aside>
+    {{> winevr-nav}}
   </div>
 </div>
 <div class="bg-white">
   <div class="container full">
-    <h3>The Problem</h3>
-    <p>As covered in <a href="/work/wineux">The UX of Wine</a>, wine retailers and producers don’t give consumers the information and tools they need to make purchase decisions.</p>
+    <h3 class="mt3" id="overview">TL;DR</h3>
+    <p>I used Unity to build a functioning VR prototype vineyard tour in three weeks.</p><p> Testing VR experiences is hard but crucial to the success of the experience, like all other mediums.</p>
+    <figure>
+      <img class="full" src="../img/studies/winevr/settlers.gif" alt=""/>
+      <figcaption><h5>Figure 0: A shot from user testing with the Oculus Rift</h5></figcaption>
+    </figure>
+    <h6>At-A-Glance</h6>
+    <ul>
+      <li>Engine: Unity3D 5.x</li>
+      <li>Assets in: Blender, Photoshop, Bitwig</li>
+      <li>Dev time: 3 Weeks</li>
+      <li>Tests & Demos: 5</li>
+    </ul>
+    <p>Read on for the full process.</p>
+    <h3 id="problem">The Problem</h3>
+    <p>As covered in <a href="/work/wineux" target="_blank">The UX of Wine</a>, wine retailers and producers don’t give consumers the information and tools they need to make purchase decisions.</p>
     <p>When we left off, I was preparing to build a virtual environment to test prototypes of physical spaces, such as a better way to organize and display wine in liquor stores. This is an appealing concept, but it’s a two-part process: identifying the best store design, then implementing that design to see if real-world improvements match up to the VR improvements.</p>
     <p>I needed something testable, but building a wine store to test VR findings wasn’t in the three-week scope of the project. Prototype, pivot!</p>
-    <h3>The Pivot</h3>
-    <p>I had a few distinct ideas for VR prototypes which I pitched to mentors at Fresh Tilled Soil. After my presentation, <a href="https://twitter.com/im_tricious">Trish</a> pulled me aside and articulated the idea that was staring me in the face but I couldn’t see: just build a virtual vineyard tour. Thanks Trish. </p>
+    <h3 id="solution">The Solution</h3>
+    <p>I had a few distinct ideas for VR prototypes which I pitched to mentors at Fresh Tilled Soil. After my presentation, <a href="https://twitter.com/im_tricious" target="_blank">Trish</a> pulled me aside and articulated the idea that was staring me in the face but I couldn’t see: just build a virtual vineyard tour. Thanks Trish. </p>
     <figure>
       <img class="full" src="../img/studies/winevr/matrix.gif" alt=""/>
       <figcaption><h5>Figure 1: Product matrix for possible VR prototypes taken from a product roadmapping exercise</h5></figcaption>
@@ -40,13 +46,13 @@
     <p>Lesson: it’s easy to get caught up in the avant-garde ideas, but sometimes the best solutions are the most simple.</p>
     <h3>Why Virtual Reality</h3>
     <p>One of the best ways to fall in love with a wine is to walk through the vineyards and wineries from which it is produced while soaking up the sights, sounds, and smells associated with the process of creating the wine. </p>
-    <p>Although there are no smells or haptic sensations involved in virtual reality (yet), my hypothesis was that being immersed in a virtual vineyard could be an engaging and educational experience.</p>
+    <p>Although there are no smells or tactile sensations involved in virtual reality (yet), my guess was that being immersed in a virtual vineyard could be an engaging and educational experience.</p>
     <p>Let’s test it! I had three weeks until my deliverables deadline.</p>
-    <p>Core concept: show the history of the Columbia River Valley over the last 10,000 years and how the wine is produced in the region today.</p>
-    <h3>Hypothesis</h3>
+    <p>The core concept is to show the history of the Columbia River Valley over the last 10,000 years, then how the wine is produced in the region today.</p>
+    <h3 id="hypothesis">Hypothesis</h3>
     <p>After using the demo, users would rather buy Columbia Valley wine than California wine and would associate the virtual experience of the valley with wine in stores.</p>
-    <p>In retrospect, this is a bad hypothesis because it requires users’ wine preferences to exist as a tabula rasa. A better version would compare users’ preferences before and after experiencing the demo without comparing another wine region. Regardless, it narrowed the scope of the prototype and gave me test requirements from which to design.</p>
-    <h3>Process</h3>
+    <p>In retrospect, <strong>this is a bad hypothesis </strong>because it requires users’ wine preferences to exist as a tabula rasa. A better version would compare users’ preferences before and after experiencing the demo without comparing another wine region. Regardless, it narrowed the scope of the prototype and gave me test requirements from which to design.</p>
+    <h3 id="process">Process</h3>
     <p>Day one began with exploration of the technology and by modifying Unity example projects. With that out of the way, I spent the rest of the week storyboarding and synthesizing scene requirements based on the information I wanted to portray to users.</p>
     <p>Weeks two and three were spent in Unity.</p>
     <p>Cleaned-up, the process looks like this:</p>
@@ -80,14 +86,14 @@
     </div>
   </div>
   <div class="container full">
-    <h3>Why Unity</h3>
+    <h3 id="tech">Why Unity</h3>
     <p>Unity was unfamiliar to me, although I chose to use it for the prototype due to easy VR support and extensive documentation. Although the UI isn’t the greatest, Unity ended up being a good fit for the scope and requirements of the project.</p>
     <figure>
       <img class="full" src="../img/studies/winevr/interface.gif" alt=""/>
       <figcaption><h5>Figure 2: Unity + Visual Studio UIs</h5></figcaption>
     </figure>
     <p>I briefly explored using Valve’s Destinations software with photogrammetry, but the fact that it was December in Boston meant that finding a vineyard to tour and photograph would be a challenge (and likely unsuitable).</p>
-    <p>As I write this (early 2017) much of my VR prototyping is now done in <a href="http://aframe.io">A-Frame.</a> For a run-down of the most popular VR-compatible SDKs and headsets, check out <a href="#">this document.</a></p>
+    <p>As I write this (early 2017) much of my VR prototyping is now done in <a href="http://aframe.io" target="_blank">A-Frame.</a> For a run-down of the most popular VR-compatible SDKs and headsets, check out <a href="https://docs.google.com/document/d/1rJmdeLeBVI0yXaGykWytt6n8qKjnomBGhk3fagAiufg/edit?usp=sharing" target="_blank">this document.</a></p>
     <h3>Asset Pipelines</h3>
     <p>I have no formal training in game development, so I improvised my pipelines based on what seemed logical. In the future, I would spend more time on concept art and make more use of placeholder meshes early on in the process.</p><p>However, I did a good job of translating lighting concepts  into Unity. Toot toot.</p>
   </div>
@@ -114,14 +120,14 @@
     </div>
   </div>
   <div class="container full">
-    <h3>Environment Design</h3>
+    <h3 id="env">Environment Design</h3>
     <p>After familiarizing myself with the toolset, I began storyboarding and collecting information on the Columbia River Valley. Instead of recreating a real winery, I took influence from several locations to make an environment that was suggestive of a vineyard in the valley.</p>
     <figure>
       <img class="full" src="../img/studies/winevr/conceptart.gif" alt=""/>
       <figcaption><h5>Figure 3: Clips from storyboards and concept thumbnails (I am an artist in my dreams)</h5></figcaption>
     </figure>
     <p>Next, I painted up a few thumbnails to explore lighting and color concepts for the environment. Using shots of the Hood River Valley and the Columbia River Valley as reference, I settled on a sunset mood.</p>
-    <p>Finally, I went heads-down in Unity for two weeks and built a virtual vineyard. That’s a bit <a href="http://i.imgur.com/RadSf.jpg">“draw the rest of the owl”</a>, but instead of walking through the process linearly, I’m going to cover key points (and mistakes) in the sections below.</p>
+    <p>Finally, I went heads-down in Unity for two weeks and built a virtual vineyard. That’s a bit <a href="http://i.imgur.com/RadSf.jpg" target="_blank">“draw the rest of the owl”</a>, but instead of walking through the process linearly, I’m going to cover key points (and mistakes) in the sections below.</p>
     <h3>Showing vs. Telling</h3>
     <p>Scattered through each scene of the tour are plaques telling the history of the Columbia River Valley, spanning from 10,000 years ago to modern day. As the user progresses through the valley, they “walk” through time past the ice age, through Native American civilization, white settlers and pioneers, and into modern vineyards, ending with a wine display overlooking the setting sun across the river.</p>
     <figure>
@@ -133,14 +139,14 @@
     <p>Scale and distance is a big deal in games and even more so in VR. Being too close to an object in VR (especially if it is lifelike or dynamic) is a bit viscerally terrifying and claustrophobic–you feel the presence in the back of your throat and chest. Additionally, player height is tricky when placing teleport nodes (more on that later) and composing scenes.</p>
     <p>Many of my placeholder objects and terrain details were off-scale, leading to a very surreal vineyard experience in the beginning. I went back and fixed the biggest problems using playerheight as a reference, although I’m sure there is a better way to handle scale in Unity. Next time.</p>
     <h3>Lighting & Post-Processing</h3>
-    <p>See Unity’s post-processing stack <a href="https://github.com/Unity-Technologies/PostProcessing/wiki">quick-start guide</a> on Github. Everything is more vivid in VR, making tweaking post processing settings slow. Hopefully this is resolved now that we can build while in the headset.</p>
+    <p>See Unity’s post-processing stack <a href="https://github.com/Unity-Technologies/PostProcessing/wiki" target="_blank">quick-start guide</a> on Github. Everything is more vivid in VR, making tweaking post processing settings slow. Hopefully this is resolved now that we can build while in the headset.</p>
     <figure>
       <img class="full" src="../img/studies/winevr/lookaround.gif" alt=""/>
       <figcaption><h5>Figure 5: An early title shot, later scrapped. The sun sets after 80,000 frames.</h5></figcaption>
     </figure>
-    <h3>Physics</h3>
+    <h3 id="physics">Physics</h3>
     <p>Fun stuff, physics. I modeled lights on a scaffold that I wanted to string along a la hipster “Edison” string lights. The idea was to use configurable joints to make a string of long, thin rectangles into ropes, from which the lights would hang.</p>
-    <p>Instead, I spent several days fiddling with configurable joints, prefabs, and different meshes, and ended up with spectacularly exploding chains of string lights, probably due to using the wrong kinds of meshes, that I didn't have time to troubleshoot. Perhaps another iteration of the vineyard tours will have real-time string light physics. Either way, configurable joints are cool. <a href="https://forum.unity3d.com/threads/configurable-joints-in-depth-documentation-tutorial-for-dummies.389152/">This is a good write-up</a> if you’re using them.</p>
+    <p>Instead, I spent several days fiddling with configurable joints, prefabs, and different meshes, and ended up with spectacularly exploding chains of string lights, probably due to using the wrong kinds of meshes, that I didn't have time to troubleshoot. Perhaps another iteration of the vineyard tours will have real-time string light physics. Either way, configurable joints are cool. <a href="https://forum.unity3d.com/threads/configurable-joints-in-depth-documentation-tutorial-for-dummies.389152/" target="_blank">This is a good write-up</a> if you’re using them.</p>
     <h3>Locomotion</h3>
     <p>Locomotion is everyone’s big question with VR. I went with teleportation because it’s more accessible than gamepad or WASD free-roam (which many people can’t stomach) and allows you to compose tight scenes without having to account for much range of movement.</p>
   </div>
@@ -152,7 +158,7 @@
   </div>
   <div class="container full pt0">
     <p>Restricted vantage points also allow you to cleverly wind your map around by blocking viewing angles using objects or effects, saving resources and distance.</p>
-    <h3>Pacing</h3>
+    <h3 id="pacing">Pacing</h3>
     <p>Due to the novelty of VR, users spent the majority of their time in the first 15% of the experience. They were soaking in the view, looking at the grass, marveling at the light filtering through tree leaves. I assumed incorrectly that people would breeze through the initial few teleport points to get to the good stuff, when the valley opened up in front of them and the plaques shared rich historical anecdotes.</p>
     <p>Instead, the simple fact that they were in VR and seeing grass sway in the wind was so engaging that everyone spent their time looking around the dullest first three locations, then breezed through the vineyard and settlement because the sun had set after 80,000 frames.</p>
     <figure>
@@ -160,10 +166,10 @@
       <figcaption class="px4"><h5>Figure 6: A top-down map of all teleport nodes in the prototype's final version.</h5></figcaption>
     </figure>
     <p>After my initial tests, I smoothed out the pacing by clipping unnecessary scenes and condensing others. I also placed more signals in the environment like old wood signs pointing down the path and vineyard rows and terrain contours that encouraged the player to look towards the next teleport point. These changes smoothed out the experience significantly for other testers.</p>
-    <h3>Testing</h3>
-    <p>Lindsay Burke has a good writeup about the <a href="http://www.freshtilledsoil.com/user-testing-v-usability-testing/">different kinds of UX testing</a>: user testing and usability testing. This applies to VR as much as it does to flat product design.</p>
+    <h3 id="testing">Testing</h3>
+    <p>Lindsay Burke has a good writeup about the <a href="http://www.freshtilledsoil.com/user-testing-v-usability-testing/" target="_blank">different kinds of UX testing</a>: user testing and usability testing. This applies to VR as much as it does to flat product design.</p>
     <p>My initial tests allowed me to fix player teleport orientation, a confusing audio bug, move text further away from the user for readability (with the exact distance depending on the length of the paragraph), and understand where pacing was broken.</p>
-    <p>To record user tests and take more notes, I used <a href="https://obsproject.com/">Open Broadcaster Software</a>. If you’re looking to cross-reference you notes with your recordings, set a timer when you start recording before the test and timestamp your notes as you write them to avoid labelling each note with scene or context prefixes.</p>
+    <p>To record user tests and take more notes, I used <a href="https://obsproject.com/" target="_blank">Open Broadcaster Software</a>. If you’re looking to cross-reference you notes with your recordings, set a timer when you start recording before the test and timestamp your notes as you write them to avoid labelling each note with scene or context prefixes.</p>
     <p>After delivering the prototype on deadline, I went back to run a few more casual tests on tweaks I had made.</p>
     <h3>Results</h3>
     <p>VR experiences are nothing if not engaging. Even at low levels of fidelity, your brain quickly goes “oh yep, I’m here. This is the world where I am” and discards reality, causing you to shuffle around and bump into things in the real world.</p>
@@ -174,6 +180,7 @@
     <p>Due to time constraints, I wasn’t able to compare users’ attitudes about wine from the Columbia River Valley region before and after the experience.</p>
     <p>However, walking through the prototype generated a huge amount of enthusiastic discussion about wine, favorite vineyards, past experiences, and preferences. It’s no doubt that the prototype makes people excited about wine, far more so than the 2D application prototype I built previously.</p>
     <p>If I were to do it again, I would administer a handful of more formal tests interviewing users about their attitudes towards Washington wine and vineyard tours before and after the experience to collect higher-quality qualitative information.</p>
+    <p>If you haven't yet, check out a <a href="https://drive.google.com/open?id=0B11Ag9_N3O2wZUtsQm5DTGdwRVU" target="_blank">video</a> of the demo taken during user testing.</p>
     <h3>What’s Next?</h3>
     <p>Mobile prototypes! Although Unity on a PC is great, virtual vineyard tours will shine in wine bars, tasting events, retail locations, and industry shows. All of these are places where it’s inconvenient and expensive to roll up an Oculus or Vive rig. Mobile VR is cheap and, well, mobile.</p>
     <h5 class="mt4"><a href="/projects">Read another case study! -></a></h5>
