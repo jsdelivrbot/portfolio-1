@@ -426,6 +426,9 @@ nav.nav-secondary a {
   font-weight: 400;
   text-decoration: underline; }
 
+.list a {
+  text-decoration: none; }
+
 .nav-item {
   margin: 0 0 13px 0; }
 
