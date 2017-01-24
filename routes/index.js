@@ -32,5 +32,8 @@ router.get('/work/wineux', function(req, res) {
   res.render('work/wineux', context);
 });
 
+router.get('/work/winevr', function(req, res) {
+  res.render('work/winevr', context);
+});
 
 module.exports = router;

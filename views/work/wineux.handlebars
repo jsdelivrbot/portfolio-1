@@ -12,7 +12,7 @@
     <h2>The UX of Wine</h2>
     <h3>🍷</h3>
 
-    <h3 class="mt3">Summary</h3>
+    <h3 class="mt3" id="overview">Summary</h3>
     <h6>Problem</h6>
     <p>Wine retailers and producers don’t give consumers the information and tools they need to make purchase decisions.</p>
     <h6>Research</h6>
@@ -30,7 +30,7 @@
     <figcaption class="px3"><h5>Figure 1: Initial Industry Brainstorm</h5></figcaption>
   </figure>
   <div class="container full">
-    <h3>Initial Research</h3>
+    <h3 id="research">Initial Research</h3>
     <p>In order to understand the wine ecosystem, I talked with consumers, producers, distributors, and retail wine shops, writing and refining interview guides for each role I interviewed.</p>
     <p>After two weeks of interviews, I collated all my notes into a master document and extracted the key insights to clarify my understanding of the wine industry and its problems.</p>
   </div>
@@ -61,14 +61,16 @@
     </div>
   </div>
   <div class="container full">
-    <h3>Define & Focus</h3>
+    <h3 id="problem">Define & Focus</h3>
     <p>Interviews uncovered problems and opportunities throughout the wine supply chain. I chose to focus on the consumer experience because current consumer technology offerings are extremely limited or poorly executed (with some exceptions–CellarTracker.com).</p>
     <p>Further focusing, I discarded wine consumers who are likely to know exactly what they want most of the time and consumers who know too little (don’t care about wine apps) or too much (already know what they want).</p>
     <figure>
       <img src="../img/studies/wineux/users.gif" class="full figure" alt="The wine industry supply chain by need, tools, and obstacles" />
       <figcaption><h5>Figure 3: User Groups Breakdown</h5></figcaption>
     </figure>
-    <h3>Personas and Empathy Maps</h3>
+    <h3>Working Problem Statement</h3>
+    <p>"Wine retailers and producers don’t give consumers the information and tools they need to make purchase decisions."</p>
+    <h3 id="docs">Personas and Empathy Maps</h3>
     <p>From my interview themes, I synthesized three personas: Everyday Al, Self-Conscious Sal, and Tyler The Enthused. I combined my empathy maps and personas in a hybrid document that described key behavioral components.</p>
   </div>
   <div class="row">
@@ -129,7 +131,7 @@
     <img src="../img/studies/wineux/xpmap.gif" class="full figure" alt="Experience Map with Personas as swimlanes" />
     <figcaption class="px3"><h5>Figure 7: Initial Experience Map (later versions in spreadsheets for flexibility)</h5></figcaption>
   </figure>
-  <div class="container full">
+  <div class="container full" id="hypothesis">
     <h3>Hypotheses & Most Dangerous Assumptions</h3>
     <p>From the opportunities in my experience map, I outlined four solutions: a locally-available wine list, a wine education tool, a stronger retail environment utilizing virtual reality, and marketing tools for wine producers.</p>
     <p>As the wine list and the retail environments solved for more critical user anxieties and obstacles problems, so I focused on those. To further clarify, I outlined my most dangerous assumptions, user groups,  and what each prototype would and would not be explicitly testing for.</p>
@@ -139,7 +141,7 @@
       <img src="../img/studies/wineux/prototype-layout.gif" class="full figure" alt="Cellar app prototype in Sketch" />
       <figcaption><h5>Figure 8: "Cellar" mobile app prototype in Sketch</h5></figcaption>
     </figure>
-    <h3>Prototype #1: “Cellar App”</h3>
+    <h3 id="proto1">Prototype #1: “Cellar App”</h3>
     <h6>Hypothesis</h6>
     <p>Availability in proximity is the biggest factor in a wine purchase. Providing users a filterable stream of locally-available wines with relevant details solves for anxieties in the motivation and acquisition stages, creating a wine purchase.</p>
     <h6>Most Dangerous Assumptions</h6>
@@ -181,7 +183,7 @@
     <h3>Test Results: 🚫</h3>
     <p>I tested the app with wine consumers who weren’t part of my initial interviews. Although the value proposition of location-based availability for the wines resonated, the presented information (CellarTracker rating and flavor abstracts) didn’t resonate more than the alternative of walking into a store and reading labels.</p>
     <p>Additionally, based on past behavior, users weren’t anxious about their wine picks that they would search for an app, although some claimed otherwise. Although a mobile app might solve for anxieties and produce desired outcomes, user acquisition would likely be prohibitively expensive. 💵</p>
-    <h3>Prototype #2: Virtual Reality</h3>
+    <h3 id="proto2">Prototype #2: Virtual Reality</h3>
     <p>Virtual reality is cool but hasn’t been used for much aside from storytelling and painting and also Harmonix is putting Rockband in VR. However, there’s a flipside to VR that really no one has touched: building a better physical reality using VR as space and systems prototyping. Imperatively: test your expensive physical systems in VR and then build them in reality.</p>
     <h6>Hypothesis</h6>
     <p>We can use virtual reality to quickly test unique wine displays and retail store layouts that give consumers appropriate and compelling information leading to better in-store conversion rates.</p>
