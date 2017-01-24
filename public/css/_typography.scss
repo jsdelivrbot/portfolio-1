@@ -18,7 +18,7 @@ body {
 a{
   @extend .black;
   transition: all ease .04s;
-  text-decoration: none;
+  text-decoration: underline;
   border: none;
   font-weight: 600;
 }
@@ -27,6 +27,7 @@ nav{
   &.nav-secondary{
     a{
       font-weight: 400;
+      text-decoration: underline;
     }
   }
 }
@@ -36,6 +37,7 @@ nav{
 }
 
 .bg-black a{
+  text-decoration: none;
   &:hover{
     &:not(.clean){
       padding: 0 0 0 3px;

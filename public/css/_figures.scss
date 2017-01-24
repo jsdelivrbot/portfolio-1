@@ -1,0 +1,21 @@
+.img-hero {
+  img{
+    max-width:101%;
+    max-height:101%;
+    position: fixed;
+  }
+}
+
+iframe {max-width: 100%;}
+
+img {
+  &.full {
+    max-width:100%;
+  }
+  &.figure {
+  }
+}
+
+figcaption {
+  @extend .mb3;
+}
