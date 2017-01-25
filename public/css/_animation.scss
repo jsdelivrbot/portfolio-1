@@ -7,6 +7,9 @@
   &.wine{
     animation: slideup3 .5s cubic-bezier(0,.71,0,.99);
   }
+  &.upknown{
+    animation: slideup4 .5s cubic-bezier(0,.71,0,.99);
+  }
 }
 
 @keyframes fadein {
@@ -24,4 +27,8 @@
 @keyframes slideup3{
   from {background-position:200% top;}
   to {background-position: 150% top;}
+}
+@keyframes slideup4{
+  from {background-position: 270px bottom;}
+  to {background-position: 270px 50%;}
 }

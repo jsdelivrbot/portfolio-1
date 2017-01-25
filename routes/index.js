@@ -36,4 +36,12 @@ router.get('/work/winevr', function(req, res) {
   res.render('work/winevr', context);
 });
 
+router.get('/work/mocktail', function(req, res) {
+  res.render('work/mocktail', context);
+});
+
+router.get('/work/upknownid', function(req, res) {
+  res.render('work/upknownid', context);
+});
+
 module.exports = router;

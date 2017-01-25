@@ -1,0 +1,97 @@
+<div class="container-content">
+  <div class="container-left white bg-black bg-image slideup upknown">
+    {{> header}}
+    {{> nav}}
+    {{> upknown-nav}}
+  </div>
+  <!-- INDEX  -->
+  <div class="container-right bg-white fadein">
+    <a href="/projects"><h5>< Back</h5></a>
+    <hr class="line">
+    <h4>Exposing Networks</h4>
+    <h2>Upknown: Interaction Design ⬆️</h2>
+
+    <h3 class="mt3" id="overview">Summary</h3>
+    <h6>Problem</h6>
+    <p>Talented people struggle to find roles at companies and companies struggle to find talented people.</p>
+    <h6>My Role</h6>
+    <p>I joined Upknown to help establish an initial UI, design email-to-app interactions, develop a visual brand for raising a seed round, and help with onboarding.</p>
+    <h6>Results</h6>
+    <p>We made good progress solving user pains and providing value, but there are more stakeholders involved in products than just users. This case study focuses on three areas: new user onboarding, understanding user-to-candidate relationships, and email interactions.</p>
+    <p>Read on below. ⤵</p>
+  </div>
+</div>
+<div class="bg-white">
+  <div class="container full">
+    <h3 id="problem">The Problem</h3>
+    <p>Talented people struggle to find roles at companies and companies struggle to find talented people.
+    Highly-networked individuals across all industries meet talented people and know companies searching for talent. Although these individuals do their best to make matches, the process is time-consuming, inefficient, and subject to a recency effect. </p>
+    <h3>A Satisficing Solution</h3>
+    <p>Interviews revealed a common manual system for making matches between companies and talent. Highly-networked people maintain a list of candidates in their network which they hopefully remember to update every time they receive an intro email. As opportunities flow in through email, Linkedin, network job listings, and private recruiting newsletters, they hopefully find something that matches a recent spreadsheet cell of talent.</p>
+    <figure>
+      <img class="full" src="../img/studies/upknown/usecase.gif" alt=""/>
+      <figcaption><h5>Figure 1: Core Upknown Use Case</h5></figcaption>
+    </figure>
+    <h3 id="solution">The Upknown Solution</h3>
+    <p>A web app that allows highly-networked individuals to index candidates in a searchable stream without leaving their inbox. The stream is distributed through regular emails to anyone who follows the individual. Candidate profiles include the attached resume, automagically generated tags like #ios #mobile #dev, and information pulled from FullContact and Linkedin, including a profile image, current title, role, etc.</p>
+    <h3>The Team</h3>
+    <p><a href="https://twitter.com/vernonluke">Luke</a> and <a href="https://twitter.com/dannyglunz">Danny</a> headed the company with <a href="https://twitter.com/itsalexcampbell">Alex</a> and I working on product. Luke is a seasoned entrepreneur with deep experience building <a href="http://www.ecoproducts.com/">Ecoproducts</a>. Danny and Alex were and are good friends and are now at Pana and Twitter, respectively (as of 2017).</p>
+    <h3 id="research">Diagnostic Research</h3>
+    <p>We had a constant supply of user feedback and potential users at our fingertips thanks to Luke’s interviews, making it easier to evaluate which user problems were being solved and where our solutions were falling flat.</p>
+    <p>By talking with users, we determined that there was confusion around the nature of adding candidates to Upknown. Was it an endorsement of the candidate’s skills? Or just a resume blast? What about people they want to keep track of but don’t know personally?</p>
+    <p>By looking at user behavior, we saw that most people didn't take the time to log into the app every time they forward a candidate into the system. We needed to re-think the email forwarding flow, and beef up the way that people interact with Upknown in their inboxes.</p>
+    <aside class="mb3">
+      <h4 class="mt2">Lesson</h4>
+      <p class="">Having potential and active investors as users has benefits, but it also means anything those people say will carry more weight in your team’s mind. This is especially true when deciding where important fixes or features land on your roadmap.</p>
+    </aside>
+
+    <h3 id="process">Design Process</h3>
+    <p>After user interviews we discussed and prioritized user needs as a team, brainstormed flows and collected use cases, then settled on a single flow to build out. Based on those activities I built a clickable prototype in InVision, made tweaks based on feedback, and did a rough implementation. Danny came through afterwards to unscramble my implementation and ship the branch.</p>
+    <p>I would have jammed in a week to focus on testing the onboarding–it would have made the product significantly better despite other sacrifices. However, the reality of early-stage software is that money and target users reward some activities (shipping ASAP) over others (testing work). Looking back, the best design strategy would have been to use small artifacts representative of what we were building to test our most dangerous assumptions. Hindsight is 20/20.</p>
+    <h3 id="onboarding">Focus: Onboarding Users</h3>
+    <p>Upknown is a complex application that interacts with the user both through emails and through a web application interface. The switch between app and inbox is jarring: When people are in their inbox, they are trying as hard as possible to stay in their inbox. </p>
+    <p>Onboarding was a thorn in our sides because we were constantly iterating on the core user flow and shipping large changes to the product. After building a few approaches over a few months, we decided it was best to keep people in the app through the onboarding and recreate the experience of adding a candidate to Upknown. </p>
+    <figure>
+      <img class="full" src="../img/studies/upknown/onboarding.gif" alt=""/>
+      <figcaption><h5>Figure 2: The onboarding flow mimics the inbox-to-web app interaction to introduce the uncommon pattern.</h5></figcaption>
+    </figure>
+    <p>Unfortunately, there was a lot of guesswork and hypotheses we never tested. Here are a few of the flows we played with, before settling on the Walkthrough flow based on feedback.</p>
+    <h3 id="rel">Focus: Describing User-to-Candidate Relationships</h3>
+    <p>Universally, early users felt it was unclear what it meant socially when they added a candidate to Upknown from their inboxes. Were they endorsing this person? Even the users who used the system more for indexing candidates as opposed to sharing their candidates said they would like to indicate the strength of a connection.</p>
+    <figure>
+      <img class="full" src="../img/studies/upknown/wifi.gif" alt=""/>
+      <figcaption><h5>Figure 3: Establishing relationship strength using the wifi signal</h5></figcaption>
+    </figure>
+    <p>The Wi-fi symbol does just that–indicate the strength of a connection. At the time we were looking at Conspire’s product (which we felt did a lot right and but also maybe did some things wrong) and copied a move from their design playbook: using the wi-fi signal to indicate the strength of a connection between people. When you pair it with a prompt like “how well do you know this person?” it lends significant context to auxiliary testimonials that further describe the nature of the user-to-candidate relationship.</p>
+    <figure>
+      <img class="full" src="../img/studies/upknown/profile.gif" alt=""/>
+      <figcaption><h5>Figure 4: Relationship Strength in full  effect</h5></figcaption>
+    </figure>
+    <h3 id="emails">Focus: Rethinking Emails</h3>
+    <p>Problem: Users weren’t confirming their candidates in the app or fixing glaring problems with the way Upknown scraped candidate information. </p>
+    <figure>
+      <img class="full" src="../img/studies/upknown/email2.gif" alt=""/>
+      <figcaption><h5>Figure 5.1: Confirmation emails allow users to populate their stream without leaving their inbox</h5></figcaption>
+    </figure>
+    <p>For example, if Upknown thought a candidate’s name was the first two words of the subject line of the email, the user should know before it is added to their stream and be prompted to fix any errors. It needed to be easier to confirm candidates and correct information from the inbox.</p>
+    <p>In order to test as soon as possible, Danny built out a barebones version of the email system, I added some css margins, and we collected feedback around the unstyled emails. I then pushed the emails to their final state.</p>
+    <figure>
+      <img class="full" src="../img/studies/upknown/email1.gif" alt=""/>
+      <figcaption><h5>Figure 5.2: Email as an interface in action</h5></figcaption>
+    </figure>
+    <p>Side note: coding emails is 4x time intensive as other front-end work due to the security risks involved in viewing emails. Email clients display a small, varying set of style rules and toss the rest while mangling your code. We used a Ruby mailcatcher to preview emails as they are sent, an inline css compiler with some custom tweaks, and I used an Etsy email <head> template to make Gmail viewing awesome, along with Mailchimp <tc> templates for responsiveness on the iOS mail app, and a bunch of custom work for Outlook + Yahoo + Gmail mobile app. Testing takes a lot of patience, even with EmailOnAcid or Litmus.</p>
+    <h3 id="end">What I Learned</h3>
+    <p>In the end, the product was sidelined the product after six months of work. Sometimes economics and timelines don’t work out despite having solutions to clear user pain points. You take what you learn from the experience to build better next time.</p>
+    <p>I learned a lot about organizing and prioritizing product design work. There is a constant interplay between making big-picture decisions and designing critical details, and balancing those two modes takes intentionality.</p>
+    <p>Working closely with Danny and Luke also made me question what values I bring to the table when designing products. What is best for the users isn’t always best for the product overall due to the needs of other stakeholders. Just because Danny is a badass and we could ship features every day doesn’t mean we should, but at the same time, nimble design and development is a valuable asset.</p>
+    <p>A handful of users still use Upknown to track candidates and match them with jobs in their network (tracking jobs manually). But on the development side, the project is private on Github, closed to new user accounts.</p>
+
+
+  </div>
+</div>
+<div class="bg-black">
+  <div class="container full">
+    {{>header}}
+    {{>nav}}
+  </div>
+</div>

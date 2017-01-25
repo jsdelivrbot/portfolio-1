@@ -41,4 +41,9 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
     background-size: 50%;
     background-position: 150% top;
   }
+  &.upknown{
+    background-image:url('../img/studies/upknown/upknown.svg');
+    background-size: 85%;
+    background-position: 270px 50%;
+  }
 }
