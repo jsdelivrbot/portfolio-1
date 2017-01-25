@@ -1,8 +1,10 @@
 :root {
-font-size: 16px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 $serif: 'Georgia', serif;
+$sans: 'Avenir Next', 'Avenir', 'Helvetica', 'Arial', sans-serif;
 
 body {
   font-family: $serif;
@@ -32,8 +34,13 @@ nav{
   }
 }
 
-.list a{
-  text-decoration: none;
+.list {
+  & a{
+    text-decoration: none;
+  }
+  h5 {
+    @extend .mt35;
+  }
 }
 
 .nav-item{
@@ -51,19 +58,9 @@ nav{
 
 p {
   font-family: $serif;
-  line-height: 26px;
-  margin: 8px 0 17px 0;
   letter-spacing: normal;
-  figcaption & {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-  }
-  &.small{
-    margin: 8px 0 0 0;
-    font-size:1.0625rem;
-    line-height: 1.45rem;
-    font-weight: 300;
-  }
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 li {
@@ -75,32 +72,61 @@ li {
 }
 
 h1,h2,h3,h4,h5,h6,a{
-  font-family: 'Avenir Next', 'Helvetica', 'Arial', sans-serif;
+  font-family: $sans;
   letter-spacing: .04rem;
+  font-weight:600;
 };
 
-h1{font-size: 2.625rem;font-weight: 600;
-  line-height:3rem;}
-h2{font-size:2.125rem;font-weight: 700;
-  line-height:3rem;}
-h3{font-size:1.4375rem;font-weight: 500;
-  line-height:1.7rem;
-  margin: 13px 0 0 0;}
-h4{font-size:11px;font-weight: 500;
-  line-height:0.8125rem;
+h1, .h1 {
+  font-size: 2.8125rem;
+  line-height: 3.9375rem;
+  margin-top: 1.3125rem;
+  margin-bottom: 2.625rem;
+}
+h2, .h2 {
+  font-size: 2rem;
+  line-height: 2.625rem;
+  margin-top: 1.3125rem;
+  margin-bottom: 1.3125rem;
+}
+h3, .h3 {
+  font-size: 1.4375rem;
+  line-height: 2.625rem;
+  margin-top: 1.3125rem;
+  margin-bottom: 0rem;
+}
+h4, .h4 {
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  margin-top: 1.3125rem;
+  margin-bottom: 0rem;
+}
+h5, .h5 {
+  font-size: .7rem;
+  line-height: 1.3125rem;
+  margin-top: 1.3125rem;
+  margin-bottom: 0rem;
   text-transform: uppercase;
-  margin: 4px 0 0 0;
-  &.list{
-  margin: 20px 0 0 0;}
-  letter-spacing: .07rem;}
-h5{font-size:0.6875rem;font-weight:400;
-  margin: 11px 0 0 0;
-  padding: 0 0 20px 0;
-  border-bottom: 1px solid $light;}
-h6{font-size:1.0625rem;font-weight: 500;
-  line-height:1.7rem;
-  margin: 8px 0 0 0;
-  letter-spacing: normal;
+}
+h6, .h6 {
+  font-size: .7rem;
+  font-weight: 400;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.3125rem;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+figcaption {
+  font-family: $sans;
+  border-top: 1px solid $light;
+  font-size: .87rem;
+  padding: 1rem 0;
+  @extend .mb2;
 }
 
 hr{width:20%;

@@ -1,5 +1,5 @@
 .container {
-  padding: 52px 7.5% 52px 7.5%;
+  padding: 1.5rem 7.5% 1.5rem 7.5%;
   max-width:50%;
   &.full {max-width: 50%; @extend .ma; @extend .box;}
   &.mostly {max-width:80%; @extend .ma; @extend .box;

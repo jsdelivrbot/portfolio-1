@@ -3,6 +3,7 @@
     // max-width:101%;
     // max-height:101%;
     min-width:100%;
+    min-height: 100%;
   }
 }
 
@@ -28,12 +29,7 @@ img {
   }
 }
 
-figcaption {
-  @extend .mb3;
-}
-
 aside {
   border: 1px solid black;
-  @extend .px3;
-  @extend .py2;
+  padding: 1.4rem 1.5rem 0rem 1.5rem;
 }

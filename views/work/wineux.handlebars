@@ -2,22 +2,20 @@
   <div class="container-left white bg-black bg-image slideup wine">
     {{> header}}
     {{> nav}}
-    {{> wine-nav}}
+    <!-- {{> wine-nav}} -->
   </div>
   <!-- INDEX  -->
   <div class="container-right bg-white fadein">
-    <a href="/projects"><h5>< Back</h5></a>
     <hr class="line">
     <h4>Redesigning a legacy industry</h4>
-    <h2>The UX of Wine</h2>
-    <h3>🍷</h3>
-
+    <h2>The UX of Wine 🍷</h2>
+    {{>wine-nav}}
     <h3 class="mt3" id="overview">Summary</h3>
-    <h6>Problem</h6>
+    <h4>Problem</h4>
     <p>Wine retailers and producers don’t give consumers the information and tools they need to make purchase decisions.</p>
-    <h6>Research</h6>
+    <h4>Research</h4>
     <p>I conducted interviews across the wine industry and throughout the wine supply chain, using my research findings map the ecosystem then test falsifiable hypotheses around solutions to core problems.</p>
-    <h6>Results</h6>
+    <h4>Results</h4>
     <p>I built three prototypes, each testing different hypotheses. The first was a POP and paper interaction, the second was built in InVision and Sketch, and the third was built in Unity for the Oculus Rift VR headset.</p>
     <p>Mobile app prototypes: 🚫</p>
     <p>VR prototype: ✅</p>
@@ -27,7 +25,7 @@
 <div class="bg-white">
   <figure>
     <img src="../img/studies/wineux/brainstorm.gif" class="full" alt="Food and drink industry problems brainstorm on a whiteboard" />
-    <figcaption class="px3"><h5>Figure 1: Initial Industry Brainstorm</h5></figcaption>
+    <figcaption class="px3">Figure 1: Initial Industry Brainstorm</figcaption>
   </figure>
   <div class="container full">
     <h3 id="research">Initial Research</h3>
@@ -36,26 +34,26 @@
   </div>
   <figure>
     <img src="../img/studies/wineux/industry.gif" class="full" alt="The wine industry supply chain by need, tools, and obstacles" />
-    <figcaption class="px3"><h5>Figure 2: Wine Industry Supply Chain (domestic consumer)</h5></figcaption>
+    <figcaption class="px3">Figure 2: Wine Industry Supply Chain (domestic consumer)</figcaption>
   </figure>
   <div class="container mostly">
     <div class="row">
       <div class="cl">
-        <h4>Key Insight</h4>
+        <h5>Key Insight</h5>
         <hr class="line">
-        <h6>The Wine Supply Chain</h6>
+        <h4>The Wine Supply Chain</h4>
         <p>For wine bought in stores, the chain is Producer > Distributor > Retailer > Consumer. Each have their own needs, tools, and barriers.</p>
       </div>
       <div class="cl">
-        <h4>Key Insight</h4>
+        <h5>Key Insight</h5>
         <hr class="line">
-        <h6>How We Buy Wine</h6>
+        <h4>How We Buy Wine</h4>
         <p>Price. Label design. Social proof. Wine is a commodity masquerading (and sold) as a luxury good. Good wine experiences account for both the commodified portion and the emotional portion.</p>
       </div>
       <div class="cl">
-        <h4>Key Insight</h4>
+        <h5>Key Insight</h5>
         <hr class="line">
-        <h6>User Themes</h6>
+        <h4>User Themes</h4>
         <p>Some consumers are solidly in the wine camp and know what they want. The rest are along a spectrum and buy wine with their own mindsets and contexts.</p>
       </div>
     </div>
@@ -66,7 +64,7 @@
     <p>Further focusing, I discarded wine consumers who are likely to know exactly what they want most of the time and consumers who know too little (don’t care about wine apps) or too much (already know what they want).</p>
     <figure>
       <img src="../img/studies/wineux/users.gif" class="full figure" alt="The wine industry supply chain by need, tools, and obstacles" />
-      <figcaption><h5>Figure 3: User Groups Breakdown</h5></figcaption>
+      <figcaption>Figure 3: User Groups Breakdown</figcaption>
     </figure>
     <h3>Working Problem Statement</h3>
     <p>"Wine retailers and producers don’t give consumers the information and tools they need to make purchase decisions."</p>
@@ -77,19 +75,19 @@
     <div class="cl">
       <figure>
         <img src="../img/studies/wineux/persona-sa.gif" class="full figure" alt="The wine industry supply chain by need, tools, and obstacles" />
-        <figcaption><h5>Figure 4: Self-Conscious Sal</h5></figcaption>
+        <figcaption>Figure 4: Self-Conscious Sal</figcaption>
       </figure>
     </div>
     <div class="cl">
       <figure>
         <img src="../img/studies/wineux/persona-tyler.gif" class="full figure" alt="The wine industry supply chain by need, tools, and obstacles" />
-        <figcaption><h5>Figure 5: Tyler, The Enthused</h5></figcaption>
+        <figcaption>Figure 5: Tyler, The Enthused</figcaption>
       </figure>
     </div>
     <div class="cl">
       <figure>
         <img src="../img/studies/wineux/persona-al.gif" class="full figure" alt="The wine industry supply chain by need, tools, and obstacles" />
-        <figcaption><h5>Figure 6: Everyday Al</h5></figcaption>
+        <figcaption>Figure 6: Everyday Al</figcaption>
       </figure>
     </div>
   </div>
@@ -102,34 +100,34 @@
   <div class="container mostly">
     <div class="row">
       <div class="cl">
-        <h4>Phase 1</h4>
+        <h5>Phase 1</h5>
         <hr class="line"/>
-        <h6>Motivation</h6>
+        <h4>Motivation</h4>
         <p>Users are establishing need and making a plan. Ask: “why is this person hiring wine and why?”</p>
       </div>
       <div class="cl">
-        <h4>Phase 2</h4>
+        <h5>Phase 2</h5>
         <hr class="line"/>
-        <h6>Acquisition</h6>
+        <h4>Acquisition</h4>
         <p>Users are finding, evaluating, and purchasing wine. This phase is the “how?” phase.</p>
       </div>
       <div class="cl">
-        <h4>Phase 3</h4>
+        <h5>Phase 3</h5>
         <hr class="line"/>
-        <h6>Consumption</h6>
+        <h4>Consumption</h4>
         <p>Users are delivering, serving, and drinking wine, all in different ways.</p>
       </div>
       <div class="cl">
-        <h4>Phase 4</h4>
+        <h5>Phase 4</h5>
         <hr class="line"/>
-        <h6>Reflection</h6>
+        <h4>Reflection</h4>
         <p>Users are internalizing their experience with the wine based on taste, expectations, and appropriateness.</p>
       </div>
     </div>
   </div>
   <figure>
     <img src="../img/studies/wineux/xpmap.gif" class="full figure" alt="Experience Map with Personas as swimlanes" />
-    <figcaption class="px3"><h5>Figure 7: Initial Experience Map (later versions in spreadsheets for flexibility)</h5></figcaption>
+    <figcaption class="px3">Figure 7: Initial Experience Map (later versions in spreadsheets for flexibility)</figcaption>
   </figure>
   <div class="container full" id="hypothesis">
     <h3>Hypotheses & Most Dangerous Assumptions</h3>
@@ -139,24 +137,24 @@
     <p>The prototyping process is a series of small experiments in which the designer uses artifacts to elicit new information about users’ as well as test key elements of their proposed solution. Both of my prototypes were designed to do both of those things, and ultimately succeeded by eliciting new insights about the industry and user experience, as well as validating and invalidating core value propositions.</p>
     <figure>
       <img src="../img/studies/wineux/prototype-layout.gif" class="full figure" alt="Cellar app prototype in Sketch" />
-      <figcaption><h5>Figure 8: "Cellar" mobile app prototype in Sketch</h5></figcaption>
+      <figcaption>Figure 8: "Cellar" mobile app prototype in Sketch</figcaption>
     </figure>
     <h3 id="proto1">Prototype #1: “Cellar App”</h3>
-    <h6>Hypothesis</h6>
+    <h4>Hypothesis</h4>
     <p>Availability in proximity is the biggest factor in a wine purchase. Providing users a filterable stream of locally-available wines with relevant details solves for anxieties in the motivation and acquisition stages, creating a wine purchase.</p>
-    <h6>Most Dangerous Assumptions</h6>
+    <h4>Most Dangerous Assumptions</h4>
     <ul>
       <li>Wine buying is sufficiently painful for target users to hire help in the form of an app</li>
       <li>Users are open to shopping at proximate stores</li>
       <li>The tech can recommend wine better than the individual’s base intuition</li>
     </ul>
-    <h6>User Groups</h6>
+    <h4>User Groups</h4>
     <ul>
       <li>Tech-savvy wine consumers who know some things about their wine tastes but not enough to be carefree in their wine selection.</li>
     </ul>
     <div class="row">
       <div class="cl-2">
-        <h6>Testing For</h6>
+        <h4>Testing For</h4>
         <ul>
           <li>Use-case viability</li>
           <li>Core USP: locally-available wine recommendations</li>
@@ -164,7 +162,7 @@
         </ul>
       </div>
       <div class="cl-2">
-        <h6>Not Testing For</h6>
+        <h4>Not Testing For</h4>
         <ul>
           <li>Interface and information accuracy</li>
           <li>Personal list functionality</li>
@@ -172,7 +170,7 @@
         </ul>
       </div>
     </div>
-    <h6>Valid If</h6>
+    <h4>Valid If</h4>
     <p>Users find a wine they are comfortable buying when provided personal criteria.</p>
     <h3>The Flow</h3>
     <p>A mobile application that presents the user with a filtered stream of locally-available (within an adjustable radius) wines paired with their CellarTracker.com rating and flavor abstracts.</p>
@@ -185,31 +183,31 @@
     <p>Additionally, based on past behavior, users weren’t anxious about their wine picks that they would search for an app, although some claimed otherwise. Although a mobile app might solve for anxieties and produce desired outcomes, user acquisition would likely be prohibitively expensive. 💵</p>
     <h3 id="proto2">Prototype #2: Virtual Reality</h3>
     <p>Virtual reality is cool but hasn’t been used for much aside from storytelling and painting and also Harmonix is putting Rockband in VR. However, there’s a flipside to VR that really no one has touched: building a better physical reality using VR as space and systems prototyping. Imperatively: test your expensive physical systems in VR and then build them in reality.</p>
-    <h6>Hypothesis</h6>
+    <h4>Hypothesis</h4>
     <p>We can use virtual reality to quickly test unique wine displays and retail store layouts that give consumers appropriate and compelling information leading to better in-store conversion rates.</p>
-    <h6>Most Dangerous Assumptions</h6>
+    <h4>Most Dangerous Assumptions</h4>
     <ul>
       <li>Liquor stores are interested in making more wine sales</li>
       <li>Wine producer networks will take marketing risks</li>
     </ul>
-    <h6>User Groups</h6>
+    <h4>User Groups</h4>
     <li>Tech-savvy wine consumers who know some things about their wine tastes but not enough to be carefree in their wine selection.</li>
     <div class="row">
       <div class="cl-2">
-        <h6>Testing For</h6>
+        <h4>Testing For</h4>
         <ul>
           <li>Can VR help us understand consumer behavior?</li>
           <li>Can VR allow us to effectively prototype physical spaces?</li>
         </ul>
       </div>
       <div class="cl-2">
-        <h6>Not Testing For</h6>
+        <h4>Not Testing For</h4>
         <ul>
           <li>Fidelity</li>
         </ul>
       </div>
     </div>
-    <h6>Valid If</h6>
+    <h4>Valid If</h4>
     <li>Users react more positively to the new layouts in VR than the existing layouts recreated in VR.</li>
     <h3>The Prototype</h3>
     <p>Before building in Unity I presented my ideas to mentors at Fresh Tilled Soil. Then things went a bit sideways.</p><a href="/work/winevr">Read on: VR Prototypes for Wine –></a></p>
