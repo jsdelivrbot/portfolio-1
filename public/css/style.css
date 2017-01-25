@@ -532,6 +532,10 @@ hr {
 iframe {
   max-width: 100%; }
 
+@media screen and (max-width: 680px) {
+  iframe {
+    display: none; } }
+
 img.full {
   max-width: 100%; }
 
