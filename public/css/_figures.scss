@@ -1,8 +1,17 @@
 .img-hero {
   img{
-    max-width:101%;
-    max-height:101%;
-    position: fixed;
+    // max-width:101%;
+    // max-height:101%;
+    // height:100vh;
+    min-width:100%;
+    // max-height:100%;
+    // position: fixed;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .container-right{
+    overflow:visible !important;
   }
 }
 
