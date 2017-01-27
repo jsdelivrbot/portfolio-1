@@ -8,6 +8,10 @@ router.get('/', function(req, res) {
   res.render('index', context);
 });
 
+router.get('/secret', function(req, res) {
+  res.render('secret', context);
+});
+
 router.get('/projects', function(req, res) {
   res.render('projects', context);
 });
@@ -42,6 +46,10 @@ router.get('/work/mocktail', function(req, res) {
 
 router.get('/work/upknownid', function(req, res) {
   res.render('work/upknownid', context);
+});
+
+router.get('/work/activities', function(req, res) {
+  res.render('work/activities', context);
 });
 
 module.exports = router;

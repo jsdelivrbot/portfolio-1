@@ -525,6 +525,9 @@ hr {
 .nocase {
   text-transform: none; }
 
+.underlinea {
+  text-decoration: underline; }
+
 .img-hero img {
   min-width: 100%;
   min-height: 100%; }
