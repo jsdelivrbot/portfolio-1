@@ -12,6 +12,10 @@ router.get('/secret', function(req, res) {
   res.render('secret', context);
 });
 
+router.get('/contact', function(req, res) {
+  res.render('contact', context);
+});
+
 router.get('/projects', function(req, res) {
   res.render('projects', context);
 });
