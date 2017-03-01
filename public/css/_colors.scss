@@ -11,14 +11,19 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
 
 .glow{color:$glow}
 .grey{color: $grey}
-.white{color:white}
+.white{
+  color:white;
+    a {
+      color: white;
+    }
+}
 .black{color:black}
 .red{color:$red}
 
 .bg-black {
   background-color: black;
   @extend .white;
-  a{color: white;}
+
 }
 .bg-white {background-color: white}
 

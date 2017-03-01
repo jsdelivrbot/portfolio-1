@@ -12,6 +12,13 @@
     padding-top: 0;
     padding-bottom: 0; }
 
+.aframe {
+  width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 0;
+  z-index: -1; }
+
 .container-content {
   display: flex;
   max-width: 1080px;
@@ -53,7 +60,11 @@
     padding: 0;
     margin: 1rem 0; }
   .cl-2 {
-    width: 100%; } }
+    width: 100%; }
+  .aframe {
+    display: none; }
+  .container-left {
+    background-color: black; } }
 
 @media screen and (max-width: 1280px) and (min-width: 681px), handheld and (orientation: portrait) {
   .container, .container-left, .container-right {
@@ -75,6 +86,8 @@
 
 .white, .bg-black {
   color: white; }
+  .white a, .bg-black a {
+    color: white; }
 
 .black, a {
   color: black; }
@@ -84,8 +97,6 @@
 
 .bg-black {
   background-color: black; }
-  .bg-black a {
-    color: white; }
 
 .bg-white {
   background-color: white; }
@@ -375,7 +386,7 @@
 .fr {
   float: right; }
 
-.oh {
+.oh, .aframe {
   overflow: hidden; }
 
 .tc {
@@ -436,9 +447,9 @@ nav.nav-secondary a {
 .nav-item {
   margin: 0 0 13px 0; }
 
-.bg-black a {
+.white a, .bg-black a {
   text-decoration: none; }
-  .bg-black a:hover:not(.clean) {
+  .white a:hover:not(.clean), .bg-black a:hover:not(.clean) {
     padding: 0 0 0 3px; }
 
 p {
