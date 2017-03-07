@@ -4,7 +4,7 @@
 
 .container, .container-left, .container-right {
   padding: 1.5rem 7.5% 1.5rem 7.5%;
-  max-width: 50%; }
+  max-width: 60%; }
   .container.full, .full.container-left, .full.container-right {
     max-width: 50%; }
   .container.mostly, .mostly.container-left, .mostly.container-right {
@@ -13,8 +13,7 @@
     padding-bottom: 0; }
 
 .aframe {
-  width: 50%;
-  max-height: 90%;
+  max-width: 100%;
   position: absolute;
   top: 0;
   z-index: -1; }
@@ -60,11 +59,7 @@
     padding: 0;
     margin: 1rem 0; }
   .cl-2 {
-    width: 100%; }
-  .aframe {
-    display: none; }
-  .container-left {
-    background-color: black; } }
+    width: 100%; } }
 
 @media screen and (max-width: 1280px) and (min-width: 681px), handheld and (orientation: portrait) {
   .container, .container-left, .container-right {
@@ -386,7 +381,7 @@
 .fr {
   float: right; }
 
-.oh, .aframe {
+.oh {
   overflow: hidden; }
 
 .tc {
@@ -428,7 +423,6 @@ body {
   -webkit-font-smoothing: antialiased;
   color: black;
   background-color: #000000;
-  background: linear-gradient(to right, black 49.99%, white 50%);
   overflow-y: scroll; }
 
 a {
@@ -511,6 +505,13 @@ p, ul, ol, pre, table, blockquote {
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0rem;
   margin-bottom: 0rem; }
+
+@media screen and (max-width: 680px), handheld and (orientation: portrait) {
+  h3, .h3 {
+    font-size: 1.4375rem;
+    line-height: 1.8rem;
+    margin-top: 1.3125rem;
+    margin-bottom: 1rem; } }
 
 figcaption {
   font-family: "Avenir Next", "Avenir", "Helvetica", "Arial", sans-serif;

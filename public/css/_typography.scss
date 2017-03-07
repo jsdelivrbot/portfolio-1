@@ -12,7 +12,6 @@ body {
   -webkit-font-smoothing: antialiased;
   color: black;
   background-color: #000000;
-  background: linear-gradient(to right, black 49.99%, white 50%);
 
   overflow-y: scroll;
 }
@@ -119,6 +118,15 @@ p, ul, ol, pre, table, blockquote {
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0rem;
   margin-bottom: 0rem;
+}
+
+@media screen and (max-width:680px), handheld and (orientation: portrait) {
+  h3, .h3 {
+    font-size: 1.4375rem;
+    line-height: 1.8rem;
+    margin-top: 1.3125rem;
+    margin-bottom: 1rem;
+  }
 }
 
 figcaption {
