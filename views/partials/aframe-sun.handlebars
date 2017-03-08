@@ -7,18 +7,38 @@
     <a-asset-item id="terrain2-2" src="../obj/sun/terrain2-2.obj"></a-asset-item>
     <a-asset-item id="terrain3" src="../obj/sun/terrain3.obj"></a-asset-item>
     <a-asset-item id="sun" src="../obj/sun/sun.obj"></a-asset-item>
+    <img id="sun-ring1" src="../obj/sun/sun-ring1.png">
+    <img id="sun-ring2" src="../obj/sun/sun-ring2.png">
+    <img id="sun-ring3" src="../obj/sun/sun-ring3.png">
+    <img id="sun-ring4" src="../obj/sun/sun-ring4.png">
+    <img id="sun-ring5" src="../obj/sun/sun-ring5.png">
+    <img id="sun-line1" src="../obj/sun/sun-line1.png">
+    <img id="sun-line2" src="../obj/sun/sun-line2.png">
+    <img id="sun-line3" src="../obj/sun/sun-line3.png">
+    <img id="sun-line4" src="../obj/sun/sun-line4.png">
+    <img id="sun-line5" src="../obj/sun/sun-line5.png">
+    <img id="sun-line6" src="../obj/sun/sun-line6.png">
+    <img id="sun-line7" src="../obj/sun/sun-line7.png">
+    <img id="sun-line8" src="../obj/sun/sun-line8.png">
+    <img id="sun-line9" src="../obj/sun/sun-line9.png">
+    <img id="t-tex1" src="../obj/sun/t-tex1.png">
 
   </a-assets>
 
-  <a-entity obj-model="obj: #terrain1" position="3.40 -1 -5.25" rotation="-5.06 0 0"></a-entity>
-  <a-entity obj-model="obj: #terrain2-1" position="2.00 -1 -5.00" scale="3 1 3"></a-entity>
-  <a-entity obj-model="obj: #terrain2-2" position="-2.00 -3 -7.00" scale="2 2 2"></a-entity>
-  <a-entity obj-model="obj: #terrain3" position="0 -2 -10" scale="4 4 3"></a-entity>
+  <a-entity id="terrain" position="0 -1 0">
+    <a-entity obj-model="obj: #terrain1" src="#t-tex1" position="3.40 -.2 -5.25" rotation="-5.06 0 0"></a-entity>
+    <a-entity obj-model="obj: #terrain2-1" position="2.00 -2 -5.00" scale="5 3 3"></a-entity>
+    <a-entity obj-model="obj: #terrain2-2" position="50 -3 -20" scale="4 6 4"></a-entity>
+    <a-entity obj-model="obj: #terrain3" position="0 -2 -10" scale="4 6 3"></a-entity>
+    <a-entity obj-model="obj: #terrain3" position="-2 -4 -5" scale="9 5 3" rotation="0 90 0"></a-entity>
+  </a-entity>
 
-  <a-entity light="type: point; color: #cdebeb; intensity: 2; distance: 50;"  position="-20 10 20"></a-entity>
+  {{> aframe-sun-rings}}
+  <a-entity light="type: point; color: #dea9ba; intensity: .5; distance: 60;"  position="30 40 -20"></a-entity>
+  <a-entity light="type: point; color: #ff3275; intensity: .5; distance: 60;"  position="30 40 -20"></a-entity>
   <a-light type="ambient" color="#f6e799" intensity=".1"></a-light>
   <a-entity camera position="0 0 0">
-    <a-animation attribute="position" to="3 0 0" from="0 0 0" dur="100000" easing="linear" repeat="indefinite" direction="alternate"></a-animation></a-entity>
+    <a-animation attribute="position" to="5 0 0" from="0 0 0" dur="50000" easing="linear" repeat="indefinite" direction="alternate"></a-animation></a-entity>
   <a-gradient-sky material="shader: gradient; topColor: 17, 32, 70; bottomColor: 187, 46, 67;"></a-gradient-sky>
 
 </a-scene>
