@@ -1,6 +1,6 @@
 <a-scene class="aframe sun" embedded vr-mode-ui="enabled: false"
-  fog="type: linear; color: #8ab0c6">
-
+  fog="type: linear; color: rgb(138, 30, 46); near: 1; far: 60;">
+<!-- #8ab0c6 17, 32, 70-->
   <a-assets>
     <a-asset-item id="terrain1" src="../obj/sun/terrain1.obj"></a-asset-item>
     <a-asset-item id="terrain2-1" src="../obj/sun/terrain2-1.obj"></a-asset-item>
@@ -34,11 +34,11 @@
   </a-entity>
 
   {{> aframe-sun-rings}}
-  <a-entity light="type: point; color: #dea9ba; intensity: .5; distance: 60;"  position="30 40 -20"></a-entity>
-  <a-entity light="type: point; color: #ff3275; intensity: .5; distance: 60;"  position="30 40 -20"></a-entity>
+  <a-entity light="type: point; color: #b83e5e; intensity: 1; distance: 60;"  position="30 40 -20"></a-entity>
+  <a-entity light="type: point; color: #ff3e32; intensity: 1; distance: 60;"  position="30 40 -20"></a-entity>
   <a-light type="ambient" color="#f6e799" intensity=".1"></a-light>
   <a-entity camera position="0 0 0">
-    <a-animation attribute="position" to="5 0 0" from="0 0 0" dur="50000" easing="linear" repeat="indefinite" direction="alternate"></a-animation></a-entity>
+    <a-animation attribute="position" to="5 0 0" from="0 0 0" dur="30000" easing="linear" repeat="indefinite" direction="alternate"></a-animation></a-entity>
   <a-gradient-sky material="shader: gradient; topColor: 17, 32, 70; bottomColor: 187, 46, 67;"></a-gradient-sky>
 
 </a-scene>

@@ -1,71 +1,71 @@
 <a-entity id="sun-rings" position="0 0 -20">
-  <a-entity obj-model="obj: #sun" position="450 10 -50" scale="25 25 25" material="shader: flat; color: rgb(255, 142, 78)"></a-entity>
-  <a-image src="#sun-ring1" position="0 20 -50" scale="5 5 5">
+  <a-entity obj-model="obj: #sun" position="450 10 -50" scale="25 25 25" material="shader: flat; color: rgb(255, 142, 78); fog: false;"></a-entity>
+  <a-image src="#sun-ring1" position="0 20 -50" scale="5 5 5" material="fog: false">
     <a-animation
       attribute="rotation"
       to="0 0 360" from="0 0 0" dur="30000" easing="linear"
       repeat="indefinite" direction="normal">
     </a-animation>
   </a-image>
-  <a-image src="#sun-ring2" position="0 20 -50" scale="5 5 5">
+  <a-image src="#sun-ring2" position="0 20 -50" scale="5 5 5" material="fog: false">
     <a-animation
       attribute="rotation"
       to="0 0 360" from="0 0 0" dur="30000" easing="linear"
       repeat="indefinite" direction="reverse">
     </a-animation>
   </a-image>
-  <a-image src="#sun-ring3" position="0 20 -50" scale="10 10 10">
+  <a-image src="#sun-ring3" position="0 20 -50" scale="10 10 10" material="fog: false">
     <a-animation
       attribute="rotation"
-      to="0 0 360" from="0 0 0" dur="100000" easing="linear"
+      to="0 0 360" from="0 0 0" dur="50000" easing="linear"
       repeat="indefinite" direction="reverse">
     </a-animation>
   </a-image>
-  <a-image src="#sun-ring4" position="0 20 -50" scale="20 18 20">
+  <a-image src="#sun-ring4" position="0 20 -50" scale="20 18 20" material="fog: false">
     <a-animation
       attribute="rotation"
-      to="0 0 360" from="0 0 0" dur="250000" easing="linear"
+      to="0 0 360" from="0 0 0" dur="80000" easing="linear"
       repeat="indefinite" direction="normal">
     </a-animation>
   </a-image>
-  <a-image src="#sun-ring5" position="0 20 -50" scale="38 38 38">
+  <a-image src="#sun-ring5" position="0 20 -50" scale="14 14 14" material="fog: false">
     <a-animation
       attribute="rotation"
-      to="45 45 360" from="45 45 0" dur="500000" easing="linear"
-      repeat="indefinite" direction="reverse">
+      to="0 0 180" from="0 0 -180" dur="50000" easing="linear"
+      repeat="indefinite" direction="normal">
     </a-animation>
   </a-image>
 
   <a-entity>
-    <a-image src="#sun-line1">
+    <a-image src="#sun-line1" material="fog: false">
       <a-animation
         attribute="position"
         to="-80 20 -30" from="-15 20 -30" dur="500000" easing="linear"
         repeat="indefinite" direction="alternate">
       </a-animation>
     </a-image>
-    <a-image src="#sun-line2" scale="6 .5 .5" rotation="0 0 3">
+    <a-image src="#sun-line2" scale="6 .5 .5" rotation="0 0 3" material="fog: false">
       <a-animation
         attribute="position"
         to="80 15 -30" from="15 15 -30" dur="300000" easing="linear"
         repeat="indefinite" direction="alternate">
       </a-animation>
     </a-image>
-    <a-image src="#sun-line3" scale="5 .5 .5">
+    <a-image src="#sun-line3" scale="5 .5 .5" material="fog: false">
       <a-animation
         attribute="position"
         to="-80 12 -30" from="18 12 -30" dur="500000" easing="linear"
         repeat="indefinite" direction="alternate">
       </a-animation>
     </a-image>
-    <a-image src="#sun-line4" scale="5 .5 .5">
+    <a-image src="#sun-line4" scale="5 .5 .5" material="fog: false">
       <a-animation
         attribute="position"
         to="-80 26 -30" from="10 26 -30" dur="500000" easing="linear"
         repeat="indefinite" direction="alternate">
       </a-animation>
     </a-image>
-    <a-image src="#sun-line5" scale="5 .5 .5">
+    <a-image src="#sun-line5" scale="5 .5 .5" material="fog: false">
       <a-animation
         attribute="position"
         to="-80 15 -30" from="-20 15 -30" dur="500000" easing="linear"
@@ -74,7 +74,7 @@
     </a-image>
   </a-entity>
 
-  <a-entity rotation="0 0 90" scale="4 2 3" position="20 10 0">
+  <a-entity rotation="0 0 90" scale="4 2 3" position="20 10 0" material="fog: false">
     <a-image src="#sun-line1">
       <a-animation
         attribute="position"
@@ -82,28 +82,28 @@
         repeat="indefinite" direction="alternate">
       </a-animation>
     </a-image>
-    <a-image src="#sun-line2" scale="6 .5 .5" rotation="0 0 3">
+    <a-image src="#sun-line2" scale="6 .5 .5" rotation="0 0 3" material="fog: false">
       <a-animation
         attribute="position"
         to="80 15 -30" from="15 15 -30" dur="300000" easing="linear"
         repeat="indefinite" direction="alternate">
       </a-animation>
     </a-image>
-    <a-image src="#sun-line3" scale="5 .5 .5">
+    <a-image src="#sun-line3" scale="5 .5 .5" material="fog: false">
       <a-animation
         attribute="position"
         to="-80 12 -30" from="18 12 -30" dur="500000" easing="linear"
         repeat="indefinite" direction="alternate">
       </a-animation>
     </a-image>
-    <a-image src="#sun-line4" scale="5 .5 .5">
+    <a-image src="#sun-line4" scale="5 .5 .5" material="fog: false">
       <a-animation
         attribute="position"
         to="-80 26 -30" from="10 26 -30" dur="500000" easing="linear"
         repeat="indefinite" direction="alternate">
       </a-animation>
     </a-image>
-    <a-image src="#sun-line5" scale="5 .5 .5">
+    <a-image src="#sun-line5" scale="5 .5 .5" material="fog: false">
       <a-animation
         attribute="position"
         to="-80 15 -30" from="-20 15 -30" dur="500000" easing="linear"
