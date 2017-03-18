@@ -1,4 +1,12 @@
-.fadein {animation: fadein .5s;}
+.fadein {
+  animation: fadein .5s;
+  &.slow {
+    animation: fadein ease-in 7s;
+  }
+}
+.fadeout {
+  animation: fadeout .1s;
+}
 .slideup {
   animation: slideup .5s cubic-bezier(0,.71,0,.99);
   &.clients{
