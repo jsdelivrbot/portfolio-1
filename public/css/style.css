@@ -23,6 +23,9 @@
   max-width: 1080px;
   margin: auto; }
 
+.container-right:last-child > h6:last-of-type {
+  padding: 20px; }
+
 .row {
   display: flex;
   justify-content: space-between; }
@@ -566,9 +569,6 @@ aside {
   animation: fadein .5s; }
   .fadein.slow {
     animation: fadein ease-in 7s; }
-
-.fadeout {
-  animation: fadeout .1s; }
 
 .slideup {
   animation: slideup 0.5s cubic-bezier(0, 0.71, 0, 0.99); }

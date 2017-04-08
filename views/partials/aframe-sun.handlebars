@@ -1,4 +1,4 @@
-<a-scene class="aframe sun fadein slow fadeout" embedded vr-mode-ui="enabled: false"
+<a-scene class="aframe sun fadein slow" embedded vr-mode-ui="enabled: false"
   fog="type: linear; color: rgb(138, 30, 46); near: 1; far: 60;">
 <!-- #8ab0c6 17, 32, 70-->
   <a-assets>
@@ -7,6 +7,7 @@
     <a-asset-item id="terrain2-2" src="../obj/sun/terrain2-2.obj"></a-asset-item>
     <a-asset-item id="terrain3" src="../obj/sun/terrain3.obj"></a-asset-item>
     <a-asset-item id="sun" src="../obj/sun/sun.obj"></a-asset-item>
+    <a-asset-item id="ship" src="../obj/sun/ship2.obj"></a-asset-item>
     <img id="sun-ring1" src="../obj/sun/sun-ring1.png">
     <img id="sun-ring2" src="../obj/sun/sun-ring2.png">
     <img id="sun-ring3" src="../obj/sun/sun-ring3.png">
@@ -31,6 +32,28 @@
     <a-entity obj-model="obj: #terrain2-2" position="50 -3 -20" scale="4 6 4"></a-entity>
     <a-entity obj-model="obj: #terrain3" position="0 -2 -10" scale="4 6 3"></a-entity>
     <a-entity obj-model="obj: #terrain3" position="-2 -4 -5" scale="9 5 3" rotation="0 90 0"></a-entity>
+  </a-entity>
+
+  <a-entity id="ships" position="-70 10 -50">
+    <a-entity obj-model="obj: #ship" scale="0.5 0.5 0.5"
+      position="20 3 0"></a-entity>
+    <a-entity obj-model="obj: #ship" scale="0.2 0.2 0.2"
+      position="30 9 0"></a-entity>
+    <a-entity obj-model="obj: #ship" scale="0.15 0.15 0.15"
+      position="50 0 0"></a-entity>
+    <a-entity obj-model="obj: #ship" scale="0.2 0.2 0.2"
+      position="10 15 0"></a-entity>
+    <a-entity obj-model="obj: #ship" scale="1 1 1"
+      position="40 10 0" rotation="180 45 90"><a-animation attribute="position"
+        dur="70000"
+        to="60 50 0"
+        from="60 10 0"
+        repeat="0"
+        easing="linear"
+      </a-animation>
+    </a-entity>
+    <!-- <a-entity obj-model="obj: #ship" scale="2.5 2.5 2.5"
+      position="20 -3 3" rotation="0 0 0"></a-entity> -->
   </a-entity>
 
   {{> aframe-sun-rings}}
