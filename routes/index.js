@@ -52,8 +52,8 @@ router.get('/work/upknownid', function(req, res) {
   res.render('work/upknownid', context);
 });
 
-router.get('/work/activities', function(req, res) {
-  res.render('work/activities', context);
+router.get('/work/enter', function(req, res) {
+  res.render('work/enter', context);
 });
 
 module.exports = router;
