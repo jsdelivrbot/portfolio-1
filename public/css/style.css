@@ -565,10 +565,13 @@ aside {
   border: 1px solid black;
   padding: 1.4rem 1.5rem 0rem 1.5rem; }
 
+.jam-load {
+  animation-play-state: paused !important; }
+
 .fadein {
   animation: fadein .5s; }
   .fadein.slow {
-    animation: fadein ease-in 7s; }
+    animation: fadein ease-in 2s; }
 
 .slideup {
   animation: slideup 0.5s cubic-bezier(0, 0.71, 0, 0.99); }

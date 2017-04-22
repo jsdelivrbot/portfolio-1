@@ -1,7 +1,9 @@
+.jam-load {animation-play-state: paused !important;}
+
 .fadein {
   animation: fadein .5s;
   &.slow {
-    animation: fadein ease-in 7s;
+    animation: fadein ease-in 2s;
   }
 }
 
