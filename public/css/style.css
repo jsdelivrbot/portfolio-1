@@ -425,8 +425,7 @@ body {
   font-size: 1.0625rem;
   -webkit-font-smoothing: antialiased;
   color: black;
-  background-color: #000000;
-  overflow-y: scroll; }
+  background-color: #000000; }
 
 a {
   transition: all ease .04s;
@@ -564,6 +563,9 @@ img.full {
 aside {
   border: 1px solid black;
   padding: 1.4rem 1.5rem 0rem 1.5rem; }
+
+.title {
+  max-width: 15rem; }
 
 .jam-load {
   animation-play-state: paused !important; }

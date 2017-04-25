@@ -32,8 +32,8 @@ router.get('/resources', function(req, res) {
   res.render('resources', context);
 });
 
-router.get('/bio', function(req, res) {
-  res.render('bio', context);
+router.get('/about', function(req, res) {
+  res.render('about', context);
 });
 
 router.get('/work/wineux', function(req, res) {
@@ -54,6 +54,9 @@ router.get('/work/upknownid', function(req, res) {
 
 router.get('/work/enter', function(req, res) {
   res.render('work/enter', context);
+});
+router.get('/work/virgin-chatbot', function(req, res) {
+  res.render('work/virgin-chatbot', context);
 });
 
 module.exports = router;
