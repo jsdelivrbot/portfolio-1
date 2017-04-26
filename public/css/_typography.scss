@@ -79,6 +79,15 @@ h1, .h1 {
   line-height: 3.9375rem;
   margin-top: 1.3125rem;
   margin-bottom: 2.625rem;
+  &.small {
+    @extend .h4;
+  }
+  &.huge {
+    font-size: 4.8125rem;
+    line-height: 5.9375rem;
+    margin-top: 3.3125rem;
+    margin-bottom: 4.625rem;
+  }
 }
 h2, .h2 {
   font-size: 2rem;

@@ -3,7 +3,7 @@
   padding: 0; }
 
 .container, .container-left, .container-right {
-  padding: 1.5rem 7.5% 1.5rem 7.5%;
+  padding: 1.5rem 7.5% 3rem 7.5%;
   max-width: 60%; }
   .container.full, .full.container-left, .full.container-right {
     max-width: 50%; }
@@ -470,6 +470,11 @@ h1, .h1 {
   line-height: 3.9375rem;
   margin-top: 1.3125rem;
   margin-bottom: 2.625rem; }
+  h1.huge, .h1.huge {
+    font-size: 4.8125rem;
+    line-height: 5.9375rem;
+    margin-top: 3.3125rem;
+    margin-bottom: 4.625rem; }
 
 h2, .h2 {
   font-size: 2rem;
@@ -483,7 +488,7 @@ h3, .h3 {
   margin-top: 1.3125rem;
   margin-bottom: 0rem; }
 
-h4, .h4 {
+h4, .h4, h1.small, .h1.small {
   font-size: 1rem;
   line-height: 1.3125rem;
   margin-top: 1.3125rem;
