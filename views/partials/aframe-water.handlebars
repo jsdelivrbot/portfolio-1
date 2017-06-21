@@ -1,0 +1,79 @@
+<a-scene class="aframe sun fadein" embedded vr-mode-ui="enabled: false">
+  <a-entity id="reflection-mock">
+    <a-box position="0 0 -13" depth=".1" width=".2" height=".1" rotation="0 0 0" color="#EF2D5E">
+      <a-animation
+        delay="0"
+        attribute="width"
+        to="0.05"
+        direction="alternate"
+        repeat="indefinite"
+        dur="1000"
+        easing="ease"></a-animation>
+    </a-box>
+    <a-box position="0 0 -10" depth=".1" width=".7" height=".1" rotation="0 0 0" color="#EF2D5E">
+      <a-animation
+        delay="200"
+        attribute="width"
+        to="0.05"
+        direction="alternate"
+        repeat="indefinite"
+        dur="1000"
+        easing="ease"></a-animation>
+      </a-box>
+    <a-box position="0 0 -8" depth=".1" width=".3" height=".1" rotation="0 0 0" color="#EF2D5E">
+      <a-animation
+        delay="400"
+        attribute="width"
+        to="0.05"
+        direction="alternate"
+        repeat="indefinite"
+        dur="1000"
+        easing="ease"></a-animation></a-box>
+    <a-box position="0 0 -6.4" depth=".1" width=".7" height=".07" rotation="0 0 0" color="#EF2D5E">
+      <a-animation
+        delay="600"
+        attribute="width"
+        to="0.05"
+        direction="alternate"
+        repeat="indefinite"
+        dur="1000"
+        easing="ease"></a-animation></a-box>
+    <a-box position="0 0 -5.2" depth=".1" width=".2" height=".05" rotation="0 0 0" color="#EF2D5E">
+      <a-animation
+        delay="800"
+        attribute="width"
+        to="0.05"
+        direction="alternate"
+        repeat="indefinite"
+        dur="1000"
+        easing="ease"></a-animation></a-box>
+  </a-entity>
+
+  <a-entity>
+    <a-box position="0 0 -20" depth=".1" width=".1" height=".1" rotation="0 0 0" color="#EF2D5E">
+      <a-animation
+        delay="1000"
+        attribute="width"
+        to="0.05"
+        direction="alternate"
+        repeat="indefinite"
+        dur="1000"
+        easing="ease"></a-animation>
+    </a-box>
+    <a-box position="0 0 -3" depth=".01" width=".05" height=".01" rotation="0 0 0" color="#EF2D5E">
+      <a-animation
+        attribute="width"
+        to="0"
+        direction="alternate"
+        repeat="indefinite"
+        dur="800"
+        easing="ease"></a-animation>
+    </a-box>
+  </a-entity>
+
+
+  <a-sphere position="0 2.25 -25" radius="1.25" color="#EF2D5E" material="shader: flat;"></a-sphere>
+  <a-plane position="0 0 -4" rotation="-90 0 0" width="80" height="40" color="#1a2547"></a-plane>
+  <a-sky color="#0d1029"></a-sky>
+  <a-camera></a-camera>
+</a-scene>
