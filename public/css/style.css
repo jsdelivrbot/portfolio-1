@@ -492,7 +492,7 @@ h4, .h4, h1.small, .h1.small {
   font-size: 1rem;
   line-height: 1.3125rem;
   margin-top: 1.3125rem;
-  margin-bottom: 0rem; }
+  margin-bottom: .56rem; }
 
 h5, .h5 {
   font-size: 1rem;
@@ -564,6 +564,10 @@ iframe {
 
 img.full {
   max-width: 100%; }
+
+figure.plax {
+  max-height: 500px;
+  overflow: hidden; }
 
 aside {
   border: 1px solid black;
