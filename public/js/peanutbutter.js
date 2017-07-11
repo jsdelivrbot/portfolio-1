@@ -13,3 +13,10 @@ progress.aEL(){
   add filled class to li[count]
 };
 cool cats dude
+var line = document.querySelector('#hover-line');
+var elements = document.querySelectorAll('.line-hover');
+forEach.elements(this) {
+  this.getVertical height
+  and then
+  line.setAttribute to the one who will rule them all
+};
