@@ -60,7 +60,7 @@ router.get('/work/virgin-chatbot', function(req, res) {
   res.render('work/virgin-chatbot', context);
 });
 
-router.get('/work/secret/medialab', function(req, res) {
+router.get('/medialab', function(req, res) {
   res.render('work/secret/medialab', context);
 });
 
