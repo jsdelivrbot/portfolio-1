@@ -13,7 +13,7 @@ router.get('/secret', function(req, res) {
 });
 
 router.get('/contact', function(req, res) {
-  res.render('contact', context);
+  res.render('work/secret/medialab', context);
 });
 
 router.get('/projects', function(req, res) {
@@ -55,8 +55,17 @@ router.get('/work/upknownid', function(req, res) {
 router.get('/work/enter', function(req, res) {
   res.render('work/enter', context);
 });
+
 router.get('/work/virgin-chatbot', function(req, res) {
   res.render('work/virgin-chatbot', context);
+});
+
+router.get('/work/secret/medialab', function(req, res) {
+  res.render('work/secret/medialab', context);
+});
+
+router.get('/superpedestrian', function(req, res) {
+  res.render('work/secret/superpedestrian', context);
 });
 
 module.exports = router;
