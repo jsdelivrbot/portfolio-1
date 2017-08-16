@@ -13,7 +13,7 @@ router.get('/secret', function(req, res) {
 });
 
 router.get('/contact', function(req, res) {
-  res.render('work/secret/medialab', context);
+  res.render('contact', context);
 });
 
 router.get('/projects', function(req, res) {
