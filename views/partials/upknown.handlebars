@@ -1,0 +1,73 @@
+</div>
+</div>
+<div class="container mostly white">
+  <h2 class="">Problem: Talented people struggle to find roles at companies. Companies struggle to find talented people.</h2>
+  <h2 class="">Solution: Match candidates to jobs using the email inboxes of highly-networked individuals as a database.</h2>
+</div>
+<div class="container full white">
+  <p>I joined Upknown as the only designer for six months in 2015 to establish an initial UI, design email-to-app interactions, develop a visual brand for raising a seed round, and help design user onboarding.</p>
+  <p>Designs were built by me in scss/html.erb then polished and implemented by <a href="https://github.com/dglunz">Danny Glunz.</a></p>
+</div>
+<div class="bg-white container full">
+<h3 id="">Core Use Case</h3>
+<figure>
+  <img class="full" src="../img/medialab/upknown/usecase.svg" alt=""/>
+</figure>
+<h3 id="">Interaction Maps</h3>
+<p><em>(before journey maps were cool)</em></p>
+<figure>
+  <img class="full" src="../img/medialab/upknown/email-flow.svg" alt=""/>
+  <figcaption>Shaded paths require sign-in (auth via LinkedIn).</figcaption>
+</figure>
+<figure>
+  <img class="full" src="../img/medialab/upknown/networks.svg" alt=""/>
+</figure>
+<figure>
+  <img class="full" src="../img/medialab/upknown/beta.svg" alt=""/>
+</figure>
+  <h3 id="emails">Designing Email Interactions</h3>
+  <p>Problem: Previously, users weren’t confirming their candidates in the app or fixing glaring problems with the way Upknown scraped candidate information. </p>
+  <figure>
+    <img class="full" src="../img/studies/upknown/email2.gif" alt=""/>
+    <figcaption>Redesigned confirmation emails allow users to populate their candidate stream without leaving their inbox</figcaption>
+  </figure>
+  <p>For example, if Upknown thought a candidate’s name was the first two words of the subject line of the email, the user should know before it is added to their stream and be prompted to fix any errors. It needed to be easier to confirm candidates and correct information from the inbox, and we were able to rely on some natural language processing to get it done.</p>
+  <figure>
+    <img class="full" src="../img/studies/upknown/email1.gif" alt=""/>
+    <figcaption>Redesigned email interactions with NLP functionality</figcaption>
+  </figure>
+  <p>Side note: We used a Ruby mailcatcher to preview emails as they are sent, an inline css compiler with some custom tweaks, and a mashup of custom code and Etsy's wonderful built-for-Gmail templates to get cross-device and cross-reader pixel perfect compatability.</p>
+
+    <h3 id="onboarding">Onboarding and Relationship Classification</h3>
+    <p>Problem: Early users felt it was unclear what it meant socially when they added a candidate to Upknown from their inboxes. Were they endorsing this person? Even the users who used the system more for indexing candidates as opposed to sharing their candidates said they would like to indicate the strength of a connection.</p>
+    <figure>
+      <img class="full" src="../img/studies/upknown/onboarding.gif" alt=""/>
+      <figcaption>How well do you know this person?</figcaption>
+    </figure>
+    <p>The Wi-fi symbol does just that–indicate the strength of a connection. At the time we were looking at Conspire’s product (which we felt did a lot right and but also maybe did some things wrong) and copied a move from their design playbook: using the wi-fi signal to indicate the strength of a connection between people. When you pair it with a prompt like “how well do you know this person?” it lends significant context to auxiliary testimonials that further describe the nature of the user-to-candidate relationship during new user onboarding.</p>
+    <figure>
+      <img class="full" src="../img/medialab/upknown/ob-1.svg" alt=""/>
+    </figure>
+    <figure>
+      <img class="full" src="../img/medialab/upknown/ob-2.svg" alt=""/>
+    </figure>
+    <figure>
+      <img class="full" src="../img/medialab/upknown/ob-3.svg" alt=""/>
+    </figure>
+    <figure>
+      <img class="full" src="../img/medialab/upknown/ob-4.svg" alt=""/>
+    </figure>
+    <figure>
+      <img class="full" src="../img/medialab/upknown/ob-5.svg" alt=""/>
+    </figure>
+    <figure>
+      <img class="full" src="../img/medialab/upknown/ob-6.svg" alt=""/>
+    </figure>
+
+    <h3 id="onboarding">Matching and Stream Wireframes</h3>
+    <p>Jobs and matching functionality, depicted below, was mostly implemented but never released. So it goes.</p>
+    <figure>
+      <img class="full" src="../img/medialab/upknown/matching.svg" alt=""/>
+    </figure>
+    <p>You can read a detailed case study about the design process <a href="/work/upknownid">here.</a></p>
+</div>

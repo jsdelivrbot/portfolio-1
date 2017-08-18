@@ -24,8 +24,8 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
 .bg-black {
   background-color: black;
   @extend .white;
-
 }
+
 .bg-white {background-color: white}
 
 
@@ -55,5 +55,10 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
     background-image:url('../img/studies/upknown/upknown.svg');
     background-size: 85%;
     background-position: 270px 50%;
+  }
+  &.acf{
+    background-image:url('../img/medialab/acf/acf-banner.png');
+    background-size: 105% ;
+    background-position: center;
   }
 }

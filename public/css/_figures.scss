@@ -26,10 +26,19 @@ img {
     max-width:100%;
   }
   &.figure {
+    padding: 10% 0;
+    &.small {
+      max-height: 10rem;
+    }
+  }
+  &.icon {
+    max-width: 5rem;
+    padding: 1.4rem;
   }
 }
 
 figure {
+  margin: 3rem 0 1rem 0;
   &.plax {
     max-height: 500px;
     overflow: hidden;

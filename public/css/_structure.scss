@@ -5,6 +5,7 @@
   &.mostly {max-width:80%; @extend .ma; @extend .box;
     padding-top: 0; padding-bottom: 0;
   }
+  margin: auto;
 }
 
 .aframe{
@@ -21,6 +22,10 @@
   display: flex;
   max-width:1080px;
   margin: auto;
+  &.flex-around {
+    justify-content: space-around;
+    align-items: stretch;
+  }
 }
 
 .container-left{
@@ -36,22 +41,46 @@
   padding: 20px;
 }
 
+section {
+  margin: 4rem 0;
+}
+
 .row {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content:space-between;
   &.jl{
     justify-content:flex-start;
     padding: .5rem 1.5rem; margin: 0 15px;
   }
+  &.jr{
+    justify-content:flex-end;
+    padding: .5rem 1.5rem; margin: 0 15px;
+  }
 }
 
 .affix {
-  position: fixed;
+  // position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
   &.top {
-    top: 0;
-    height: 1.5rem;
-    width: 100%;
   }
+  &.bar {
+    @extend .box;
+    border-bottom: 1px solid white;
+  }
+}
+
+nav {
+  // max-width: 60%;
+  // padding: 0;
 }
 
 .cl{
@@ -80,6 +109,10 @@
   .cl-2{width:100%;}
   // .aframe{display:none;}
   // .container-left{background-color: black;}
+  nav {padding: 0 15% 7.5%;
+    a{margin: 0 2rem .5rem 0;
+    display:block;}}
+
 }
 
 @media screen and (max-width:1280px) and (min-width:681px), handheld and (orientation: portrait) {
@@ -89,4 +122,11 @@
   }
   .row{display: block;}
   .cl{max-width: 90%; padding: 0; margin: 2rem 0;}
+  .cl-2{
+    margin: 0;
+    width: 100%;
+  }
+  nav {padding: 0 15% 7.5%;
+    a{margin: 0 2rem .5rem 0;
+    display:block;}}
 }
