@@ -48,7 +48,7 @@ section {
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content:space-between;
   &.jl{
     justify-content:flex-start;

@@ -36,7 +36,6 @@ section {
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between; }
   .row.jl {
     justify-content: flex-start;
