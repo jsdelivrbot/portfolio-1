@@ -73,6 +73,12 @@ router.get('/medialab', function(req, res) {
   router.get('/medialab/wine', function(req, res) {
     res.render('work/secret/medialab/wine', context);
   });
+  router.get('/medialab/resume', function(req, res) {
+    res.render('work/secret/medialab/resume', context);
+  });
+  router.get('/medialab/mocktail', function(req, res) {
+    res.render('work/secret/medialab/mocktail', context);
+  });
 
 router.get('/superpedestrian', function(req, res) {
   res.render('work/secret/superpedestrian', context);
