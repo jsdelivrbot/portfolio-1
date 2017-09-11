@@ -5,7 +5,7 @@ var context = require('../public/js/context');
 /* GET home page. */
 
 router.get('/', function(req, res) {
-  res.render('index', context);
+  res.render('index', {layout: 'main_aframe.handlebars'});
 });
 
 router.get('/secret', function(req, res) {
@@ -58,6 +58,10 @@ router.get('/work/enter', function(req, res) {
 
 router.get('/work/virgin-chatbot', function(req, res) {
   res.render('work/virgin-chatbot', context);
+});
+
+router.get('/clients/keota', function(req, res) {
+  res.render('work/keota', {layout: 'keota'});
 });
 
 router.get('/medialab', function(req, res) {
