@@ -3,7 +3,7 @@
 .fadein {
   animation: fadein .5s;
   &.slow {
-    animation: fadein ease-in 2s;
+    animation: fadein ease-in 1.5s;
   }
 }
 
@@ -14,6 +14,9 @@
   }
   &.wine{
     animation: slideup3 .5s cubic-bezier(0,.71,0,.99);
+    &.small {
+      animation: slideup5 .8s cubic-bezier(0,.71,0,.99);
+    }
   }
   &.upknown{
     animation: slideup4 .5s cubic-bezier(0,.71,0,.99);
@@ -39,4 +42,8 @@
 @keyframes slideup4{
   from {background-position: 270px bottom;}
   to {background-position: 270px 50%;}
+}
+@keyframes slideup5{
+  from {background-position: 200% top;}
+  to {background-position: 80% top;}
 }

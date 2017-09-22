@@ -25,6 +25,7 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
   background-color: black;
   @extend .white;
 }
+.bg-dark{background-color:$dark}
 
 .bg-white {background-color: white}
 
@@ -50,6 +51,7 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
     background-image:url('../img/winebottle.svg');
     background-size: 50%;
     background-position: 150% top;
+    &.small {background-size: 20%; background-position: 80% top;}
   }
   &.upknown{
     background-image:url('../img/studies/upknown/upknown.svg');
@@ -59,6 +61,11 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
   &.acf{
     background-image:url('../img/medialab/acf/acf-banner.png');
     background-size: 105% ;
+    background-position: center;
+  }
+  &.mocktail{
+    background-image:url('../img/mocktail-cover.jpg');
+    background-size: cover;
     background-position: center;
   }
 }

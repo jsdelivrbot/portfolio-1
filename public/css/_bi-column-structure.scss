@@ -1,0 +1,111 @@
+main.bc-body {
+  &.contained {
+    $border-color: $dark;
+    color: $dark;
+    padding: 2rem 12.5% 4rem 12.5%;
+    @media screen and (max-width:1000px) and (min-width:721px), handheld and (orientation: portrait) {padding: 2rem 1.5% 0 1.5%;}
+    border-top: 20px solid $border-color;
+    border-left: 20px solid $border-color;
+    border-right: 20px solid $border-color;
+    @extend .bg-white;
+    &.bg-black {
+      $border-color: white;
+      color: white;
+      @extend .bg-black;
+      border-top: 20px solid $border-color;
+      border-left: 20px solid $border-color;
+      border-right: 20px solid $border-color;
+    }
+    img &:first-of-type {
+      max-width: 300px;
+      @media screen and (max-width:720px), handheld and (orientation: portrait) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .counter {
+
+  }
+  section {
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    div {
+      &:first-of-type{width:43%;}
+      &:nth-child(2){
+        &:not(.level) {
+          margin-top: 4rem
+        }
+      }
+      position:relative;
+      max-width:42%;
+      &.solo{max-width:90%;}
+      padding: 2rem 3% 0;
+      &.full{width:90%;}
+      &.list {
+        h1,h2,h3,h4,h5{margin: .5rem 0; }
+        a {&:hover::after {
+          color: rgba(38, 31, 33, 0.43);
+        }}
+      }
+    }
+    @media screen and (max-width:720px), handheld and (orientation: portrait) {
+      flex-wrap: wrap;
+      div {
+        &:first-of-type{width:90%;}
+        max-width:90%;
+        padding: 2rem 3% 0;
+        &:nth-child(2){margin-top: -2rem;}
+      }
+    }
+  }
+}
+
+footer.bc {
+  border-left: 20px solid $dark;
+  border-right: 20px solid $dark;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  a{
+    transition: all .4s ease;
+    margin: 0 2.1rem;
+  }
+  @media screen and (max-width:720px), handheld and (orientation: portrait) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    a {margin-top: 1rem;}
+  }
+  a:hover{padding: 0 !important;}
+}
+
+.number:after{
+  content:'1';
+  font-size: 4rem;
+  top:0;
+  opacity: 33%;
+  color: rgba(38, 31, 33, 0.15);
+  font-style: italic;
+  transition: all .23s ease;
+  display: block;
+  transform: translateX(-3.5rem) translateY(-10.5rem);
+  @media screen and (max-width:720px), handheld and (orientation: portrait) {
+    transform: translateX(-1.5rem) translateY(-14rem);
+  }
+  cursor:pointer;
+}
+.two:after {content:'2';}
+.three:after{content:'3';}
+
+.desktop-tr {
+  text-align: right;
+  @media screen and (max-width:720px), handheld and (orientation: portrait) {
+    text-align: left;
+  }
+}

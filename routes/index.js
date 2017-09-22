@@ -88,4 +88,20 @@ router.get('/superpedestrian', function(req, res) {
   res.render('work/secret/superpedestrian', context);
 });
 
+router.get('/product', function(req, res) {
+  res.render('work/product/product', context);
+});
+
+  router.get('/product/mocktail', function(req, res) {
+    res.render('work/product/mocktail', context);
+  });
+
+  router.get('/product/wine', function(req, res) {
+    res.render('work/product/wine', {layout: 'main-jquery'});
+  });
+
+  router.get('/product/upknown', function(req, res) {
+    res.render('work/product/upknown', context);
+  });
+
 module.exports = router;
