@@ -26,9 +26,11 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
   @extend .white;
 }
 .bg-dark{background-color:$dark}
-
+.bg-light {background-color: $light}
 .bg-white {background-color: white}
+.hl-white{background-color: white;}
 
+.border-top-blue{border-top:5px solid $glow;}
 
 .bg-image-example{
   background-image:url('../img/articles_bg.svg');
@@ -64,7 +66,7 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
     background-position: center;
   }
   &.mocktail{
-    background-image:url('../img/mocktail-cover.jpg');
+    background-image:url('../img/studies/mocktail/bloom-1.jpg');
     background-size: cover;
     background-position: center;
   }

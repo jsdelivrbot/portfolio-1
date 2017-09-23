@@ -135,8 +135,17 @@ section {
 .bg-dark {
   background-color: #222; }
 
+.bg-light {
+  background-color: #eee; }
+
 .bg-white, main.bc-body.contained {
   background-color: white; }
+
+.hl-white {
+  background-color: white; }
+
+.border-top-blue {
+  border-top: 5px solid #5ca5fb; }
 
 .bg-image-example {
   background-image: url("../img/articles_bg.svg");
@@ -169,7 +178,7 @@ section {
     background-size: 105%;
     background-position: center; }
   .bg-image.mocktail {
-    background-image: url("../img/mocktail-cover.jpg");
+    background-image: url("../img/studies/mocktail/bloom-1.jpg");
     background-size: cover;
     background-position: center; }
 
@@ -755,6 +764,58 @@ main.bc-body section {
         main.bc-body section div:nth-child(2) {
           margin-top: -2rem; } }
 
+main.bc-body ul.timeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 5px solid #5ca5fb; }
+  @media screen and (max-width: 720px), handheld and (orientation: portrait) {
+    main.bc-body ul.timeline {
+      flex-wrap: wrap;
+      flex-direction: column; } }
+  main.bc-body ul.timeline li {
+    transform: translateX(-1rem);
+    list-style: none;
+    max-width: 20%;
+    position: relative; }
+    main.bc-body ul.timeline li p {
+      font-size: .9rem; }
+    main.bc-body ul.timeline li:first-of-type {
+      margin: 15px;
+      margin-left: 4rem; }
+    main.bc-body ul.timeline li h5 {
+      position: absolute;
+      top: -5rem;
+      left: -1rem; }
+    main.bc-body ul.timeline li.product {
+      background-color: #222;
+      color: white;
+      padding: 1rem 1rem 0 1rem; }
+    main.bc-body ul.timeline li h4 {
+      margin: 0; }
+    @media screen and (max-width: 720px), handheld and (orientation: portrait) {
+      main.bc-body ul.timeline li {
+        max-width: 100%;
+        transform: none; }
+        main.bc-body ul.timeline li:first-of-type {
+          margin: 15px; }
+        main.bc-body ul.timeline li h5 {
+          position: relative;
+          top: auto;
+          left: auto;
+          margin: 1rem 0; } }
+  main.bc-body ul.timeline li::before {
+    content: '';
+    height: .9rem;
+    border-left: 4px solid #5ca5fb;
+    position: absolute;
+    left: 1.2rem;
+    top: -0.95rem; }
+    @media screen and (max-width: 720px), handheld and (orientation: portrait) {
+      main.bc-body ul.timeline li::before {
+        border-left: none; } }
+
 footer.bc {
   border-left: 20px solid #222;
   border-right: 20px solid #222;
@@ -801,3 +862,8 @@ footer.bc {
   @media screen and (max-width: 720px), handheld and (orientation: portrait) {
     .desktop-tr {
       text-align: left; } }
+
+.df {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }

@@ -1,10 +1,124 @@
-<main class="bc-body">
-  <section class="bg-black white">
-    <div class="">
-
-    </div>
-    <div class="">
-
+<main class="bc-body contained bg-white">
+  <a href="/product">< back</a>
+  <section>
+    <div class="df full solo">
+      <img src="../img/studies/upknown/logo.svg" alt="" class="di">
+      <h2 class="di ml3">Upknown: Interaction Design</h2>
     </div>
   </section>
+  <section class="bg-light pb3">
+    <div class="level">
+      <h4>My Role</h4>
+      <p>I joined Upknown for six months to design email-to-app interactions, build onboarding, and implement an early stream management UI. I also developed a basic visual brand for raising a post-seed round.</p>
+    </div>
+    <div class="level">
+      <h4>Legacy</h4>
+      <p>This is a bit of a legacy case study as I did this work in early 2015, but I think it's more interesting than saying "recent UX work is under NDA" or showing a few random onboarding UI mockups. If you're into random onboarding UI mockups, there are some <a href="/work/enter">here.</a></p>
+    </div>
+  </section>
+  <section>
+    <div class="">
+      <h2 id="problem">The Problem</h2>
+      <p>Talented people struggle to find roles at companies and companies struggle to find talented people.
+      Highly-networked individuals across all industries meet talented people and know companies searching for talent. Although these individuals do their best to make matches, the process is time-consuming, inefficient, and subject to an extreme recency bias (~2 weeks).</p>
+    </div>
+    <div class="level">
+      <h3>The Satisficing Solution</h3>
+      <p>Interviews revealed a common manual system for making matches between companies and talent. Highly-networked people maintain a list of candidates in their network which they hopefully remember to update every time they receive an intro email. As opportunities flow in through email, Linkedin, network job listings, and private recruiting newsletters, they hopefully find something that matches a recent spreadsheet cell of talent.</p>
+    </div>
+  </section>
+  <section>
+    <div class="full solo">
+      <h2>The Upknown Solution</h2>
+      <p>A web app that allows highly-networked individuals to index candidates in a searchable stream without leaving their inbox. The stream is distributed through regular emails to anyone who follows the individual. Candidate profiles include the attached resume, automagically generated tags like #ios #mobile #dev, and information pulled from FullContact and Linkedin, including a profile image, current title, role, etc.</p>
+    </div>
+  </section>
+  <figure>
+    <figcaption>Figure 1: Core Upknown Use Case</figcaption>
+    <img class="full" src="../img/studies/upknown/usecase.gif" alt=""/>
+  </figure>
+  <section>
+    <div class="">
+      <h3 id="onboarding">Focus: Onboarding Users</h3>
+      <p>Upknown is a complex application that interacts with the user both through emails and through a web application interface. The switch between app and inbox is jarring: When people are in their inbox, they are trying as hard as possible to stay in their inbox. </p>
+      <p>Onboarding was a thorn in our sides because we were constantly iterating on the core user flow and shipping large changes to the product, which meant rebuilding the onboarding each time. After building a few approaches over a few months, we decided it was best to keep people in the app through the onboarding and recreate the experience of adding a candidate to Upknown.</p>
+    </div>
+    <div class="">
+      <figure>
+        <img class="full" src="../img/studies/upknown/onboarding.gif" alt=""/>
+        <figcaption>Figure 2: A live onboarding snippet</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section>
+    <div class="">
+      <h4>Onboarding Wires</h4>
+      <figcaption>Figures: The onboarding flow mimics the inbox-to-web app interaction to introduce a new use pattern (switching from inbox to web app in one workflow).</figcaption>
+      <figure>
+        <img class="full" src="../img/medialab/upknown/ob-1.svg" alt=""/>
+      </figure>
+      <figure>
+        <img class="full" src="../img/medialab/upknown/ob-2.svg" alt=""/>
+      </figure>
+      <figure>
+        <img class="full" src="../img/medialab/upknown/ob-3.svg" alt=""/>
+      </figure>
+    </div>
+    <div class="white level">
+      <figcaption>Figure 2: The onboarding flow mimics the inbox-to-web app interaction to introduce the uncommon pattern.</figcaption>
+      <figure>
+        <img class="full" src="../img/medialab/upknown/ob-4.svg" alt=""/>
+      </figure>
+      <figure>
+        <img class="full" src="../img/medialab/upknown/ob-5.svg" alt=""/>
+      </figure>
+      <figure>
+        <img class="full" src="../img/medialab/upknown/ob-6.svg" alt=""/>
+      </figure>
+    </div>
+  </section>
+  <section>
+    <div class="solo full">
+      <h3 id="onboarding">Matching Wires</h3>
+      <p>Jobs and matching functionality, depicted to the right, was implemented but never released.</p>
+      <figure>
+        <img class="" src="../img/medialab/upknown/matching.svg" alt=""/>
+        <figcaption>Figure 3: Automatic candidate-to-job matching wireframes, using users' inboxes as a database.</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section>
+    <div class="solo full">
+      <h3 id="emails">Designing Email Interactions</h3>
+      <p>Problem: Previously, users weren’t confirming their candidates in the app or fixing glaring problems with the way Upknown scraped candidate information. </p>
+      <figure>
+        <img class="full" src="../img/studies/upknown/email2.gif" alt=""/>
+        <figcaption>Redesigned confirmation emails allow users to populate their candidate stream without leaving their inbox</figcaption>
+      </figure>
+      <p>For example, if Upknown thought a candidate’s name was the first two words of the subject line of the email, the user should know before it is added to their stream and be prompted to fix any errors. It needed to be easier to confirm candidates and correct information from the inbox, and we were able to rely on some natural language processing to get it done.</p>
+      <figure>
+        <img class="full" src="../img/studies/upknown/email1.gif" alt=""/>
+        <figcaption>Redesigned email interactions with NLP functionality</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section>
+    <div class="solo full">
+      <h3 id="rel">Focus: Describing User-to-Candidate Relationships</h3>
+      <p>Universally, early users felt it was unclear what it meant socially when they added a candidate to Upknown from their inboxes. Were they endorsing this person? Even the users who used the system more for indexing candidates as opposed to sharing their candidates said they would like to indicate the strength of a connection.</p>
+      <figure>
+        <img class="full" src="../img/studies/upknown/wifi.gif" alt=""/>
+        <figcaption>Figure: Establishing relationship strength using the wifi signal</figcaption>
+      </figure>
+      <p>The Wi-fi symbol does just that–indicate the strength of a connection. At the time we were looking at Conspire’s product (which we felt did a lot right and but also maybe did some things wrong) and copied a move from their design playbook: using the wi-fi signal to indicate the strength of a connection between people. When you pair it with a prompt like “how well do you know this person?” it lends significant context to auxiliary testimonials that further describe the nature of the user-to-candidate relationship.</p>
+    </div>
+  </section>
+  <section>
+    <div class="full solo">
+      <h2>Lessons Learned</h2>
+      <p>Working as the only designer at Upknown I learned a lot about organizing and prioritizing product design work. There is a constant interplay between making big-picture decisions and designing critical details, and balancing those two modes takes an amount of intentionallity that isn't demanded when you're plugging away on a particular feature or refining a product with a smaller scope.</p>
+      <p>Working closely with the rest of the Upknown team also made me question what values I bring to the table when designing products. Users aren't the only stakeholders in user-centered design. </p><p>Additionally, simply because our devs are badass and we could ship features every day doesn’t mean we should, but at the same time, nimble design and development is a valuable asset and can give you a critical edge against competitors, especially when you're fighting for the same money from the same investors.</p>
+    </div>
+  </section>
+  <a href="/product">< back</a>
 </main>
