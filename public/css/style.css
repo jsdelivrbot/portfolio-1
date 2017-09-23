@@ -867,3 +867,6 @@ footer.bc {
   display: flex;
   align-items: center;
   flex-wrap: wrap; }
+
+.profile {
+  max-width: 90%; }
