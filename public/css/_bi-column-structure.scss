@@ -16,6 +16,13 @@ main.bc-body {
       border-left: 20px solid $border-color;
       border-right: 20px solid $border-color;
     }
+    &.bg-dark {
+      color: white;
+      @extend .bg-dark;
+      border-top: 20px solid $border-color;
+      border-left: 20px solid $border-color;
+      border-right: 20px solid $border-color;
+    }
     img &:first-of-type {
       max-width: 300px;
       @media screen and (max-width:720px), handheld and (orientation: portrait) {
@@ -35,7 +42,7 @@ main.bc-body {
       &:first-of-type{width:43%;}
       &:nth-child(2){
         &:not(.level) {
-          margin-top: 4rem
+          margin-top: 6rem
         }
       }
       position:relative;
@@ -160,6 +167,23 @@ footer.bc {
   }
   cursor:pointer;
 }
+
+section.white{
+  div.list{
+    a {
+      &.number:after{
+        color:rgba(255, 255, 255, 0.18);
+        &:hover{
+          color:#fff;
+        }
+      }
+      &.number:hover::after{
+        color:rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+
 .two:after {content:'2';}
 .three:after{content:'3';}
 

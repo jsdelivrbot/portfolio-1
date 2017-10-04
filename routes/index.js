@@ -65,7 +65,7 @@ router.get('/clients/keota', function(req, res) {
 });
 
 router.get('/medialab', function(req, res) {
-  res.render('work/secret/medialab', context);
+  res.render('work/product/product', context);
 });
 
   router.get('/medialab/acf', function(req, res) {
@@ -102,6 +102,10 @@ router.get('/product', function(req, res) {
 
   router.get('/product/upknown', function(req, res) {
     res.render('work/product/upknown', context);
+  });
+
+  router.get('/development/webvr', function(req, res) {
+    res.render('work/development/webvr', {layout: 'main_aframe.handlebars'});
   });
 
 module.exports = router;

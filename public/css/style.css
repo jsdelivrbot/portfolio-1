@@ -132,11 +132,14 @@ section {
 .bg-black, main.bc-body.contained.bg-black {
   background-color: black; }
 
-.bg-dark {
+.bg-dark, main.bc-body.contained.bg-dark {
   background-color: #222; }
 
 .bg-light {
   background-color: #eee; }
+
+.bg-light-light {
+  background-color: #f5f5f5; }
 
 .bg-white, main.bc-body.contained {
   background-color: white; }
@@ -724,6 +727,11 @@ main.bc-body.contained {
     border-top: 20px solid white;
     border-left: 20px solid white;
     border-right: 20px solid white; }
+  main.bc-body.contained.bg-dark {
+    color: white;
+    border-top: 20px solid white;
+    border-left: 20px solid white;
+    border-right: 20px solid white; }
   img main.bc-body.contained:first-of-type {
     max-width: 300px; }
     @media screen and (max-width: 720px), handheld and (orientation: portrait) {
@@ -744,7 +752,7 @@ main.bc-body section {
     main.bc-body section div:first-of-type {
       width: 43%; }
     main.bc-body section div:nth-child(2):not(.level) {
-      margin-top: 4rem; }
+      margin-top: 6rem; }
     main.bc-body section div.solo {
       max-width: 90%; }
     main.bc-body section div.full {
@@ -850,6 +858,14 @@ footer.bc {
   @media screen and (max-width: 720px), handheld and (orientation: portrait) {
     .number:after {
       transform: translateX(-1.5rem) translateY(-14rem); } }
+
+section.white div.list a.number:after, section.bg-black div.list a.number:after {
+  color: rgba(255, 255, 255, 0.18); }
+  section.white div.list a.number:after:hover, section.bg-black div.list a.number:after:hover {
+    color: #fff; }
+
+section.white div.list a.number:hover::after, section.bg-black div.list a.number:hover::after {
+  color: white; }
 
 .two:after {
   content: '2'; }
