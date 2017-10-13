@@ -716,7 +716,6 @@ aside {
 main.bc-body.contained {
   color: #222;
   padding: 2rem 12.5% 4rem 12.5%;
-  border-top: 20px solid #222;
   border-left: 20px solid #222;
   border-right: 20px solid #222; }
   @media screen and (max-width: 1000px) and (min-width: 721px), handheld and (orientation: portrait) {
@@ -824,7 +823,7 @@ main.bc-body ul.timeline {
       main.bc-body ul.timeline li::before {
         border-left: none; } }
 
-footer.bc {
+footer.bc, header.bc {
   border-left: 20px solid #222;
   border-right: 20px solid #222;
   display: flex;
@@ -832,16 +831,16 @@ footer.bc {
   padding: 2rem;
   justify-content: space-around;
   align-items: center; }
-  footer.bc a {
+  footer.bc a, header.bc a {
     transition: all .4s ease;
     margin: 0 2.1rem; }
   @media screen and (max-width: 720px), handheld and (orientation: portrait) {
-    footer.bc {
+    footer.bc, header.bc {
       flex-wrap: wrap;
       flex-direction: column-reverse; }
-      footer.bc a {
+      footer.bc a, header.bc a {
         margin-top: 1rem; } }
-  footer.bc a:hover {
+  footer.bc a:hover, header.bc a:hover {
     padding: 0 !important; }
 
 .number:after {
@@ -885,4 +884,5 @@ section.white div.list a.number:hover::after, section.bg-black div.list a.number
   flex-wrap: wrap; }
 
 .profile {
-  max-width: 90%; }
+  max-width: 90%;
+  max-height: 600px; }

@@ -4,7 +4,7 @@ main.bc-body {
     color: $dark;
     padding: 2rem 12.5% 4rem 12.5%;
     @media screen and (max-width:1000px) and (min-width:721px), handheld and (orientation: portrait) {padding: 2rem 1.5% 0 1.5%;}
-    border-top: 20px solid $border-color;
+    // border-top: 20px solid $border-color;
     border-left: 20px solid $border-color;
     border-right: 20px solid $border-color;
     @extend .bg-white;
@@ -132,7 +132,7 @@ main.bc-body {
   }
 }
 
-footer.bc {
+footer.bc , header.bc{
   border-left: 20px solid $dark;
   border-right: 20px solid $dark;
   display: flex;
@@ -200,4 +200,5 @@ section.white{
   flex-wrap: wrap;
 }
 
-.profile{max-width:90%;}
+.profile{max-width:90%;
+max-height: 600px;}
