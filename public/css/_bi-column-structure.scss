@@ -23,6 +23,13 @@ main.bc-body {
       border-left: 20px solid $border-color;
       border-right: 20px solid $border-color;
     }
+    &.border-ocean {
+      $border-color: $ocean;
+      border-top: 20px solid $border-color;
+      border-left: 20px solid $border-color;
+      border-right: 20px solid $border-color;
+      border-bottom: 20px solid $border-color;
+    }
     img &:first-of-type {
       max-width: 300px;
       @media screen and (max-width:720px), handheld and (orientation: portrait) {
@@ -184,6 +191,10 @@ section.white{
       }
     }
   }
+}
+
+ul.thin {
+  li {margin: 8px;}
 }
 
 .two:after {content:'2';}

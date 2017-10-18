@@ -144,6 +144,9 @@ section {
 .bg-white, main.bc-body.contained {
   background-color: white; }
 
+.bg-color {
+  background-color: #5ca5fb; }
+
 .hl-white {
   background-color: white; }
 
@@ -494,7 +497,7 @@ body {
   font-size: 1.0625rem;
   -webkit-font-smoothing: antialiased;
   color: black;
-  background-color: #000000; }
+  background-color: #222; }
 
 a {
   transition: all ease .04s;
@@ -738,6 +741,11 @@ main.bc-body.contained {
     border-top: 20px solid white;
     border-left: 20px solid white;
     border-right: 20px solid white; }
+  main.bc-body.contained.border-ocean {
+    border-top: 20px solid #2C3E50;
+    border-left: 20px solid #2C3E50;
+    border-right: 20px solid #2C3E50;
+    border-bottom: 20px solid #2C3E50; }
   img main.bc-body.contained:first-of-type {
     max-width: 300px; }
     @media screen and (max-width: 720px), handheld and (orientation: portrait) {
@@ -875,6 +883,9 @@ section.white div.list a.number:after, section.bg-black div.list a.number:after 
 
 section.white div.list a.number:hover::after, section.bg-black div.list a.number:hover::after {
   color: white; }
+
+ul.thin li {
+  margin: 8px; }
 
 .two:after {
   content: '2'; }
