@@ -172,6 +172,13 @@ section {
     .bg-image.wine.small {
       background-size: 20%;
       background-position: 80% top; }
+  .bg-image.wine-render {
+    background-image: url("../img/wine-render.png");
+    background-size: 140%;
+    background-position: 50%; }
+    .bg-image.wine-render.small {
+      background-size: 20%;
+      background-position: 80% top; }
   .bg-image.upknown {
     background-image: url("../img/studies/upknown/upknown.svg");
     background-size: 85%;
@@ -836,10 +843,13 @@ footer.bc, header.bc {
     margin: 0 2.1rem; }
   @media screen and (max-width: 720px), handheld and (orientation: portrait) {
     footer.bc, header.bc {
+      align-items: flex-start;
       flex-wrap: wrap;
-      flex-direction: column-reverse; }
+      flex-direction: column; }
       footer.bc a, header.bc a {
-        margin-top: 1rem; } }
+        margin: 1rem; }
+        footer.bc a:first-of-type, header.bc a:first-of-type {
+          margin: 1rem; } }
   footer.bc a:hover, header.bc a:hover {
     padding: 0 !important; }
 
@@ -877,6 +887,10 @@ section.white div.list a.number:hover::after, section.bg-black div.list a.number
   @media screen and (max-width: 720px), handheld and (orientation: portrait) {
     .desktop-tr {
       text-align: left; } }
+
+@media screen and (max-width: 720px), handheld and (orientation: portrait) {
+  .hide {
+    display: none; } }
 
 .df {
   display: flex;

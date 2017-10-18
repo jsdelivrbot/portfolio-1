@@ -57,6 +57,12 @@ $gradient-img: linear-gradient(to right, $tangelo, $glow 10%, $red, $purp);
     background-position: 150% top;
     &.small {background-size: 20%; background-position: 80% top;}
   }
+  &.wine-render{
+    background-image:url('../img/wine-render.png');
+    background-size: 140%;
+    background-position: 50%;
+    &.small {background-size: 20%; background-position: 80% top;}
+  }
   &.upknown{
     background-image:url('../img/studies/upknown/upknown.svg');
     background-size: 85%;
