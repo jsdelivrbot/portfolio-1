@@ -1,27 +1,33 @@
 <header class="bg-dark white bc">
-    <h1 class="">Trevor Waldorf</h1>
+    <h1 class="white fl">Trevor Waldorf</h1>
     <hr class="line white">
 </header>
 <main class="bc-body contained">
-  <section class="fadein">
+  <section id="product-container" class="fadein">
     <div class="desktop-tr">
       <h2>Product</h2>
     </div>
     <div class="list">
       <!-- <hr class="line"> -->
-      <a href="/product/mocktail" alt="Link to Virtual Reality tours" class="number one">
+      <a href="/product/mocktail" alt="Link to Virtual Reality tours"
+      class="number one"
+      id="link-mocktail">
         <h4>Service Design</h4>
         <h3>Mocktail</h3>
         <p>Great music deserves great art. How to design a business in the music industry.</p>
         <h5>Calculate some LTV →</h5>
       </a>
-      <a href="/product/wine" alt="Link to Virtual Reality tours" class="number two">
+      <a href="/product/wine" alt="Link to Virtual Reality tours"
+      class="number two"
+      id="link-wine">
         <h4>Experience Design</h4>
         <h3>WineVR</h3>
         <p>Walk through the history of vineyards in virtual reality to uncover the craft of winemaking.</p>
         <h5>Squish some grapes →</h5>
       </a>
-      <a href="/product/upknown" alt="Link to Virtual Reality tours" class="number three">
+      <a href="/product/upknown" alt="Link to Virtual Reality tours"
+      class="number three"
+      id="link-upknown">
         <h4>Product Design</h4>
         <h3>Upknown</h3>
         <p>A tactical case study in relationship classification, product onboarding, and email interfaces.</p>
@@ -29,7 +35,7 @@
       </a>
     </div>
   </section>
-  <section class="bg-dark white pb3">
+  <section class="pb3">
     <div class="desktop-tr">
       <h2>Technical</h2>
     </div>
@@ -37,26 +43,57 @@
       <a href="/development/webvr" class="number one clean">
         <h4>WebVR</h4>
         <h3>Physical Systems Modeling</h3>
-        <p>Replicating interactions with physical systems using an entity-component approach.</p>
+        <p>Replicating interactions with physical systems using an entity-component approach. Javascript.</p>
         <h5>Javascript eats the world →</h5>
       </a>
       <a href="http://tourlawrence.org" target="new" alt="Link to TourLawrence.org" class="number two clean">
         <h4>Front-End &amp; AR</h4>
         <h3>TourLawrence.org</h3>
-        <p>An online augmented-reality experience for an  historical walking tour. The AR portion is accessible via the signs in Lawrence, MA.</p>
+        <p>An online augmented-reality experience for an  historical walking tour. The AR portion is accessible via the signs in Lawrence, MA. HTML/CSS/Javascript.</p>
         <h5>Live site →</h5>
       </a>
     </div>
   </section>
-  <section class="bg-color white pb3">
+  <!-- removed in v1.2 because boring UI is boring
+  <section class="pb3">
     <div class="desktop-tr">
-      <h2>Fascinations &amp; Projects</h2>
+      <h2>UX/UI</h2>
+    </div>
+    <div class="list">
+      <a href="" target="new" alt="Link to TourLawrence.org" class="number one clean">
+        <h4>Search &amp; Sort</h4>
+        <h3>Harbour Funerals</h3>
+        <p>Designing a new search and sort for HarbourFunerals.co.uk. Wires, interactions.</p>
+        <h5>Screens →</h5>
+      </a>
+      <a href="" target="new" alt="Link to Soundcloud" class="number two clean">
+        <h4>Onboarding</h4>
+        <h3>Enter App</h3>
+        <p>Overhauling the Enter onboarding flow. Flows, wires, UI, inVision, handoff.</p>
+        <h5>Screens →</h5>
+      </a>
+    </div>
+  </section> -->
+  <section class="fadein">
+    <div class="tr">
+      <img src="img/profile-photo.jpg" class="profile" alt="">
+    </div>
+    <div class="bg-white level">
+      <h3>Design Bio</h3>
+      <p>As a designer, I've worked with METRO Group, Techstars, Silicon Valley Bank, CA Technologies, and a healthy spread of venture-backed startups across the US, UK, and Germany.</p>
+      <p>After going through Techstars Boulder in 2014, I led Mocktail, a design agency in the music industry in Berlin, Germany until fall of 2016. For the remainder of 2016 I worked as a design strategy apprentice at Fresh Tilled Soil, then spent 2017 running a small design consultancy and building VR products.</p>
+      <p>This portfolio highlights how I think about product through key projects across mediums and industries. Although a disproportionate amount of my design career has been spent producing wireframes and interface flows, this portfolio takes a higher-level approach and collects artifacts from all steps of the product process, as well as some lessons learned.</p>
+    </div>
+  </section>
+  <section class="pb3">
+    <div class="desktop-tr">
+      <h2>Enthusiasms</h2>
     </div>
     <div class="list">
       <a href="http://aviation-community.org" target="new" alt="Link to TourLawrence.org" class="number one clean">
         <h4>Non-Profit</h4>
         <h3>Aviation Community Foundation</h3>
-        <p>Helping reinvent philanthropy in the aviation industry. If you've taken a JetBlue flight in the month of October, you already know the story.</p>
+        <p>Empowering the next generation through education and transforming aviation philanthropy. If you've taken a JetBlue flight in the month of October, you already know our story.</p>
         <h5>ACF Website →</h5>
       </a>
       <a href="http://soundcloud.com/iamhexeater" target="new" alt="Link to Soundcloud" class="number two clean">
@@ -65,49 +102,9 @@
         <p>Through the Hex Eater project I've released almost fifty tracks across multiple EPs and collaborations with artists from around the world.</p>
         <h5>Soundcloud →</h5>
       </a>
-      <a href="/development/webvr" class="number three clean">
-        <h4>Academic</h4>
-        <h3>Math</h3>
-        <p>In high school I convinced my supervisor to excuse me from taking math classes after almost failing Algebra 2. Half a decade later, I've revisited math, finding new appreciation and conquering old fears.</p>
-        <h5>Imagine some numbers →</h5>
-      </a>
     </div>
   </section>
-  <section class="fadein">
-    <div class="tr">
-      <img src="img/profile-photo.jpg" class="profile" alt="">
-    </div>
-    <div class="bg-white level">
-      <h3>Design Bio</h3>
-      <p>As a designer, I've worked with METRO Group, Techstars, JetBlue, Silicon Valley Bank, Rally Software, and a spread of venture-backed startups across the US, UK, and Germany.</p>
-      <p>After going through Techstars Boulder in 2014, I led Mocktail, a design agency in the music industry in Berlin, Germany until fall of 2016.</p>
-      <p>In fall of 2016 I worked with Fresh Tilled Soil in Boston as a UX strategy apprentice, and have since been building VR products and freelancing.</p>
-      <p>This portfolio highlights how I think about product through three key projects across mediums and industries. Although a disproportionate amount of my design career has been spent producing wireframes and interface flows, this portfolio takes a higher-level approach and collects artifacts from all steps of the product process, as well as some lessons learned.</p>
-    </div>
-  </section>
-  <!-- <section>
-    <div class="desktop-tr">
-      <h2>A brief timeline of events</h2>
-    </div>
-    <div class="list">
-      <h5>Current</h5>
-      <p>VR + Various Projects</p>
-      <h5>Spring 2017</h5>
-      <p>VR + UX and Brand Freelancing</p>
-      <h5>Fall 2016</h5>
-      <p>UX Strategy Apprentice @ Fresh Tilled Soil</p>
-      <h5>Spring-Fall 2015</h5>
-      <p>Product Design @ Upknown</p>
-      <h5>Late 2014-2016</h5>
-      <p>Co-Founder / Creative Lead @ Mocktail</p>
-      <h5>Fall 2014</h5>
-      <p>Techstars Boulder</p>
-      <h5>Spring 2014</h5>
-      <p>Product Design Intern @ Waffle.io / Rally Software (now CA Technologies)</p>
-      <h5>2013</h5>
-      <p>Founder @ LearnGIMP.org</p>
-    </div>
-  </section> -->
+
 </main>
 <footer class="bg-dark white bc">
   <a href="https://dribbble.com/twaldorf" target="new">Dribbble</a>

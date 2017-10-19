@@ -6,6 +6,11 @@
 $serif: 'Georgia', serif;
 $sans: 'Avenir Next', 'Avenir', 'Helvetica', 'Arial', sans-serif;
 
+.league {
+  font-family: 'LeagueGothic';
+  letter-spacing: 1.2rem;
+}
+
 body {
   font-family: $serif;
   font-size: 1.0625rem;
@@ -63,9 +68,9 @@ p {
 li {
   margin: 15px;
   list-style:disc;
-  &:first-of-type {
-    margin-top: 8px;
-  }
+  // &:first-of-type {
+  //   margin-top: 8px;
+  // }
 }
 
 h1,h2,h3,h4,h5,h6,a{

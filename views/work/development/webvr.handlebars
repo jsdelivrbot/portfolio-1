@@ -2,14 +2,16 @@
   <a href="/product">< back</a>
   <section class="white full fadein">
     <div class="solo full">
-      <h1>A-Frame over Three.js on Node</h1>
+      <h1>Physical Systems Modeling</h1>
+      <h4>A-Frame.js/THREE.js, Javascript</h4>
+      <p>Most of my VR work is under NDA, but here are some thoughts I've had along the way and a few fun gifs.</p>
     </div>
   </section>
   <section class="">
     <div class="">
       <h2>Spatial vs. Symbolic vs. Gestural</h2>
-      <p>The environment and all properties within it are variable. Why not build all interfaces spatially? When the environment is dynamic, how do we maintain consistency in environmental interfaces? What line divides the functions we 'spatialize' and the functions we symbolize/abstract to 2D interfaces?</p>
-      <p>Moving in weirder directions, what design patterns exist for embodied interactions? Is putting on a glove an embodied interaction with a glove? How does my perception of my external self affect how I understand environmental interfaces? Interact with?</p>
+      <p>The environment and all properties within it are variable. Why not build all interfaces into the environment? When the environment is dynamic, how do we maintain consistency in environmental interfaces? What line divides the functions we 'spatialize' and the functions we abstract to 2D diegetic interfaces?</p>
+      <p>Moving in weirder directions, what design patterns exist for embodied interactions? How does my perception of my external self affect how I understand environmental interfaces? Interact with?</p>
     </div>
     <div class="">
       <h2>Simulation vs.
@@ -20,19 +22,48 @@
   </section>
   <section class="">
     <div class="">
-      <h2>Components</h2>
+      <h2>Workflow</h2>
+      <h3>Components and Scenes</h3>
+      <p>Working in A-Frame, everyone builds with an entity-component-system approach, as detailed in <a href="https://aframe.io/docs/0.7.0/introduction/entity-component-system.html">Mozilla's fantastic documentation.</a> All functionality is (in theory) polymorphic and has no regular heirarchy. Coming from a linear approach to building experiences and a limited development background, this has been a big adjustment.</p>
+      <p></p>
+    </div>
+    <div class="">
+      <p>This inherent modularity makes workflow more clear cut than traditional HTML/CSS/JS. Each system lives in its own repo with a set of components that are publishable. Component functionality is written for the minimum viable use-case then loaded into projects as needed.</p>
+      <p>Although A-Frame is billed to the public as "HTML VR", it's just a VR framework on top of Three.js, meaning dev time is mostly spent working with Three. I also use jQuery to manage my HTML partials and keep everything dry.</p>
+    </div>
+  </section>
+  <div class="row">
+    <div class="cl">
+      <h5>Asset Pipeline</h5>
+      <hr class="line white">
+      <h4>Environment</h4>
+      <p>Concept Art in Photoshop -> Textures in Photoshop -> Terrain in Blender/3ds Max -> Lighting in AFrame</p>
+    </div>
+    <div class="cl">
+      <h5>Asset Pipeline</h5>
+      <hr class="line white">
+      <h4>Objects</h4>
+      <p>Concept Art in Photoshop-> Scene Requirements in Docs -> Meshes in Blender -> Textures in Photoshop -> Assembly in AFrame</p>
+    </div>
+    <div class="cl">
+      <h5>Asset Pipeline</h5>
+      <hr class="line white">
+      <h4>Experience</h4>
+      <p>Requirements in Docs -> Diagrams -> Scene layouts in A-Frame -> Progression and functionality in JS</p>
+    </div>
+  </div>
+  <section class="">
+    <div class="">
+      <h2>Custom Components</h2>
       <ul>
         <li>Extra-environmental Controls and Displays</li>
         <li>Environment Stepthroughs</li>
         <li>Animation Batches</li>
-        <li>Animation Links (that make up a chain)</li>
+        <li>Animation Links</li>
         <li>Dynamic Abstract Labelling</li>
         <li>Environment-to-Abstract Inspectors</li>
-        <li>Electric Switches</li>
-        <li>Electric Breakers</li>
-        <li>Electric Wires</li>
+        <li>Electric Current and Electrical Interfaces</li>
         <li>Lights and Hardware</li>
-        <li>Electric Current</li>
       </ul>
     </div>
     <div class="level">
@@ -46,11 +77,28 @@
     </div>
   </section>
   <section>
-    <div class="">
-      ulp
+    <div class="solo full">
+      <h2>Gallery</h2>
     </div>
-    <div class="level">
-
+  </section>
+  <section class="gallery">
+    <div class="solo full">
+      <img src="../img/studies/vr/wires.gif" alt="">
+    </div>
+  </section>
+  <section>
+    <div class="solo full">
+      <img src="../img/studies/vr/clouds.gif" alt="">
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="solo full">
+      <img src="../img/studies/vr/sunset.gif" alt="">
+    </div>
+  </section>
+  <section>
+    <div class="solo full">
+      <img src="../img/studies/vr/hub.gif" alt="">
     </div>
   </section>
   <a href="/product">< back</a>

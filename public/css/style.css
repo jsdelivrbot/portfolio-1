@@ -492,6 +492,10 @@ ul {
   font-size: 16px;
   line-height: 24px; }
 
+.league {
+  font-family: 'LeagueGothic';
+  letter-spacing: 1.2rem; }
+
 body {
   font-family: "Georgia", serif;
   font-size: 1.0625rem;
@@ -529,8 +533,6 @@ p {
 li {
   margin: 15px;
   list-style: disc; }
-  li:first-of-type {
-    margin-top: 8px; }
 
 h1, h2, h3, h4, h5, h6, a {
   font-family: "Avenir Next", "Avenir", "Helvetica", "Arial", sans-serif;
@@ -786,6 +788,9 @@ main.bc-body section {
         main.bc-body section div:nth-child(2) {
           margin-top: -2rem; } }
 
+main.bc-body .gallery img {
+  max-width: 100%; }
+
 main.bc-body ul.timeline {
   display: flex;
   flex-direction: row;
@@ -838,6 +843,37 @@ main.bc-body ul.timeline {
       main.bc-body ul.timeline li::before {
         border-left: none; } }
 
+.timeline-wine {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  border-top: 5px solid white; }
+  .timeline-wine li {
+    transform: translateX(-1rem);
+    list-style: none;
+    width: 13%;
+    position: relative; }
+  .timeline-wine li::before {
+    content: '';
+    height: .9rem;
+    border-left: 4px solid white;
+    position: absolute;
+    left: 1.2rem;
+    top: -0.95rem; }
+    @media screen and (max-width: 720px), handheld and (orientation: portrait) {
+      .timeline-wine li::before {
+        border-left: none; } }
+  @media screen and (max-width: 720px), handheld and (orientation: portrait) {
+    .timeline-wine {
+      flex-wrap: wrap;
+      flex-direction: column;
+      border: none;
+      list-style: disc; }
+      .timeline-wine li {
+        width: 40%; } }
+
 footer.bc, header.bc {
   border-left: 20px solid #222;
   border-right: 20px solid #222;
@@ -870,11 +906,11 @@ footer.bc, header.bc {
   font-style: italic;
   transition: all .23s ease;
   display: block;
-  transform: translateX(-3.5rem) translateY(-10.5rem);
+  transform: translateX(-5.5rem) translateY(-10.5rem);
   cursor: pointer; }
   @media screen and (max-width: 720px), handheld and (orientation: portrait) {
     .number:after {
-      transform: translateX(-1.5rem) translateY(-14rem); } }
+      transform: translateX(-1.5rem) translateY(-13rem); } }
 
 section.white div.list a.number:after, section.bg-black div.list a.number:after {
   color: rgba(255, 255, 255, 0.18); }
