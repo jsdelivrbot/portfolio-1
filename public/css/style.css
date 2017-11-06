@@ -947,3 +947,7 @@ ul.thin li {
 .profile {
   max-width: 90%;
   max-height: 600px; }
+
+.mockup {
+  max-width: 30%;
+  margin: auto; }
